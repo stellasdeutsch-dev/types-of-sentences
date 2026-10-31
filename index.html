@@ -169,6 +169,11 @@ html.no-tts .vbtn{display:none}
 .mini span{font-size:14px;color:var(--mute)}
 .mini .blue span{color:#E2ECFF}
 
+/* ---------- author ---------- */
+.author{display:flex;gap:14px;align-items:center;padding:18px}
+.author .av{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-weight:700;font-size:20px;color:#fff;background:linear-gradient(135deg,#7FB0FF,var(--blue2))}
+.author p{margin:0;font-size:15px;color:var(--ink2);line-height:1.45}
+.author b{color:var(--ink);font-weight:600}
 /* ---------- story / steps ---------- */
 .steps{display:grid;gap:0;margin-top:26px}
 .step{display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14);position:relative}
@@ -601,7 +606,7 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
       <h1 class="h1 split"><span class="ln">Типы предложений</span> <span class="ln"><span class="or">в английском</span> <span class="t2">без зубрёжки</span></span></h1>
       <p class="lede">Я выучил английский через <b>компьютерные игры</b>, а не за партой. Здесь всё, что нужно про типы предложений: <b>схемы, видео, упражнения и тест</b>.</p>
       <div class="acts">
-        <a class="btn big" href="#story"><svg class="ic"><use href="#i-key"/></svg> Начать гайд</a>
+        <a class="btn big" href="#takeaways"><svg class="ic"><use href="#i-key"/></svg> Начать гайд</a>
         <a class="btn big ghost" href="#platform">Ещё 20+ тем в Notion</a>
         
       </div>
@@ -622,46 +627,12 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
   </div>
 </section>
 
-<!-- ============ STORY ============ -->
+<!-- ============ AUTHOR ============ -->
 <section id="story">
   <div class="wrap">
-    <div class="card navy">
-      <span class="eyebrow"><svg class="ic"><use href="#i-map-pin"/></svg> Кто пишет этот гайд</span>
-      <h2 class="h2 split">Из аула Казыгурт <span class="t2">в Рим.</span> <span class="or">Через игры.</span></h2>
-      <p class="lede">Меня зовут Диас. Я учусь в <b>Sapienza</b>, одном из главных университетов Италии. Свободно говорю по-итальянски. А начиналось всё с игры.</p>
-      <div class="steps">
-        <div class="step rv">
-          <span class="no">01</span>
-          <div><h4>Игры на английском. <em>С переводчиком</em> в соседней вкладке.</h4><p>Описания, задания, подсказки. Слов много. Я переводил каждое. Не потому что учил язык. Просто хотел понять игру.</p></div>
-          <div class="cubes" aria-hidden="true"><div class="cube b ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-gamepad-2"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>01</span></div></div></div></div>
-        </div>
-        <div class="step rv">
-          <span class="no">02</span>
-          <div><h4>Чат с другими игроками. <em>Хочешь победить,</em> пиши.</h4><p>Короткие фразы. Вопросы. Команды. Так я прокачал разговорный. Потом сдал в НИШ. И понял: язык учится, когда тебе нравится процесс.</p></div>
-          <div class="cubes" aria-hidden="true"><div class="cube o ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-message-circle"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>02</span></div></div></div></div>
-        </div>
-        <div class="step rv">
-          <span class="no">03</span>
-          <div><h4>Тот же метод. <em>Итальянский</em> и Sapienza.</h4><p>Погружение, практика, свой подход. Сработало второй раз. Теперь путешествую по Европе и играю в футбольных лигах Италии.</p></div>
-          <div class="cubes" aria-hidden="true"><div class="cube n ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-graduation-cap"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>03</span></div></div></div></div>
-        </div>
-      </div>
-      <div class="mapc rv" id="map">
-        <svg viewBox="0 0 840 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#CBD4E2"/></pattern>
-          <linearGradient id="zone" x1="0" x2="1"><stop offset="0" stop-color="#FFA01C" stop-opacity=".35"/><stop offset="1" stop-color="#FFA01C" stop-opacity=".12"/></linearGradient></defs>
-          <rect width="840" height="400" fill="url(#dots)"/>
-          <path d="M120 210 C 240 120, 380 60, 520 110 S 700 260, 740 200" fill="none" stroke="#CBD4E2" stroke-width="10" stroke-linecap="round"/>
-          <path id="mapPath" d="M740 200 C 700 120, 560 40, 420 70 S 190 150, 120 210" fill="none" stroke="#FFA01C" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
-          <polygon points="650,150 760,130 800,215 740,280 660,250" fill="url(#zone)" stroke="#FFA01C" stroke-width="2" stroke-linejoin="round"/>
-          <circle cx="740" cy="200" r="9" fill="#FFA01C"/><circle cx="740" cy="200" r="18" fill="#FFA01C" opacity=".25"/>
-          <circle cx="120" cy="210" r="9" fill="#3672E8"/><circle cx="120" cy="210" r="18" fill="#3672E8" opacity=".25"/>
-          <g id="plane"><circle r="17" fill="#fff"/><path d="M-7 1 L8 -4 L4 1 L8 6 Z" fill="#3672E8"/></g>
-        </svg>
-        <div class="lbl" style="right:6%;top:12%">Казыгурт<small>старт · игры</small></div>
-        <div class="lbl" style="left:4%;top:18%">Рим<small>Sapienza</small></div>
-        <div class="tag">Язык это <span class="or">маршрут</span>,<br><span class="t2">а не предмет</span></div>
-      </div>
+    <div class="card white author rv">
+      <span class="av">Д</span>
+      <p><b>Диас, студент Sapienza в Риме.</b> Английский выучил через игры, итальянский тем же методом. Здесь только то, что реально работает.</p>
     </div>
   </div>
 </section>
@@ -1143,21 +1114,7 @@ function xInit(){
   /* ---------- hero cubes pop ---------- */
   if(G){
     G.from('.hero .scene .cube, .hero .scene .glass, .hero .scene .ring', {scale:.4, y:40, duration:1.1, ease:'elastic.out(1,.55)', stagger:.12, delay:.2});
-    G.from('.step .cube', {scale:.5, y:30, duration:.9, ease:'back.out(2.5)', stagger:.08, scrollTrigger:{trigger:'.steps', start:'top 80%', once:true}});
   }
-
-  /* ---------- map plane ---------- */
-  (function(){
-    var path = $('#mapPath'), plane = $('#plane');
-    if(!path || !plane) return;
-    if(G && window.MotionPathPlugin){
-      G.set(plane, {xPercent:0, yPercent:0});
-      G.to(plane, {motionPath:{path:path, align:path, autoRotate:false, alignOrigin:[.5,.5]}, ease:'none', scrollTrigger:{trigger:'#map', start:'top 85%', end:'bottom 35%', scrub:1}});
-      G.fromTo(path, {strokeDashoffset:120}, {strokeDashoffset:0, repeat:-1, ease:'none', duration:3});
-    } else {
-      plane.setAttribute('transform', 'translate(430 70)');
-    }
-  })();
 
   /* ---------- route lines ---------- */
   if(G){ $$('#routeNav a').forEach(function(a){ var id = a.getAttribute('href'), t = $(id), bar = $('.rline i', a); if(!t) return; G.to(bar, {scale:1, ease:'none', scrollTrigger:{trigger:t, start:'top 70%', end:'bottom 30%', scrub:true}}); }); }
