@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Интерактивный гайд Диаса: простые, сложные, вопросительные и условные предложения. Схемы, видео, упражнения и тест.">
+<meta property="og:title" content="Типы предложений в английском · Dias English">
+<meta property="og:description" content="Интерактивный гайд Диаса: простые, сложные, вопросительные и условные предложения. Схемы, видео, упражнения и тест.">
+<meta name="theme-color" content="#E4E4E1">
+<link rel="icon" href="../media/logo.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Типы предложений в английском · Dias English</title>
+<link rel="preload" href="../assets/fonts/rubik-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/bagelfatone-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Bagel Fat One';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/bagelfatone-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:800 900;font-display:swap;src:url(../assets/fonts/rubik-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:800 900;font-display:swap;src:url(../assets/fonts/rubik-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
+<script defer src="../assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{
+  --bg:#FFFFFF; --soft:#F3F5F8; --soft2:#E9EDF3; --line:#E2E7EF;
+  --ink:#1B2131; --ink2:#3A4256; --mute:#8D9BB8; --mute2:#B5C0D6;
+  --navy1:#45557A; --navy2:#2B3854; --navy3:#1C2539;
+  --blue:#4F8FF7; --blue2:#3672E8; --blueL:#A9CBFF; --blueXL:#DCEAFF;
+  --or:#FFA01C; --or2:#FF7A00; --green:#22C38E; --red:#FF5A5F;
+  --r:28px; --gut:16px; --max:1180px;
+  --sh:0 18px 50px rgba(28,37,57,.10);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+main{overflow-x:clip}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-.125em}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+section{padding:14px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- type ---------- */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.eyebrow .ic{color:var(--or)}
+.h1{font-weight:600;font-size:clamp(34px,9.4vw,76px);line-height:1.02;letter-spacing:-.035em;margin:14px 0 0}
+.h2{font-weight:600;font-size:clamp(28px,7.6vw,58px);line-height:1.04;letter-spacing:-.03em;margin:10px 0 0}
+.h3{font-weight:600;font-size:clamp(21px,5.4vw,30px);line-height:1.12;letter-spacing:-.02em;margin:0}
+.t2{color:var(--mute)} .or{color:var(--or)} .bl{color:var(--blue)}
+.navy .t2,.blue .t2{color:var(--mute2)}
+.lede{font-size:clamp(16px,4.3vw,20px);line-height:1.5;color:var(--ink2);max-width:620px;margin:16px 0 0}
+.lede b{color:var(--ink);font-weight:600}
+.navy .lede,.blue .lede{color:#D3DCEC}.navy .lede b,.blue .lede b{color:#fff}
+.small{font-size:13px;color:var(--mute)}
+.split .wd{display:inline-block}
+
+/* ---------- cards ---------- */
+.card{position:relative;border-radius:var(--r);padding:28px 20px;overflow:hidden;isolation:isolate}
+.card.soft{background:var(--soft)}
+.card.soft::before{content:"";position:absolute;inset:-20%;z-index:-1;background:radial-gradient(40% 30% at 85% 10%,rgba(255,255,255,.95),transparent 70%),radial-gradient(30% 25% at 8% 90%,rgba(255,255,255,.8),transparent 70%)}
+.card.navy{background:radial-gradient(90% 60% at 80% 0%,#56688F 0%,transparent 60%),linear-gradient(165deg,var(--navy1),var(--navy2) 55%,var(--navy3));color:#fff}
+.card.blue{background:radial-gradient(70% 80% at 85% 20%,#8CB8FF 0%,transparent 60%),linear-gradient(115deg,#6FA4F8,var(--blue) 45%,var(--blue2));color:#fff}
+.card.white{background:#fff;box-shadow:var(--sh);border:1px solid var(--line)}
+.grid2{display:grid;gap:14px}
+.grid4{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.card > *:not(.glass):not(.ring){position:relative;z-index:1}
+.ch,.pc,.stat,.ft,.opt{min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:16px;background:#fff;color:var(--ink);font-weight:600;font-size:16px;text-decoration:none;box-shadow:0 10px 28px rgba(20,40,90,.16);transition:scale .25s,box-shadow .25s,background .25s}
+.btn:hover{scale:1.03}
+.btn:active{scale:.97}
+.btn.or{background:linear-gradient(180deg,#FFB547,var(--or) 55%,#FF8E0A);color:#fff;box-shadow:0 12px 30px rgba(255,140,0,.35)}
+.btn.bl{background:linear-gradient(180deg,#6CA2FA,var(--blue));color:#fff;box-shadow:0 12px 30px rgba(54,114,232,.32)}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.btn.line{background:#fff;box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn.big{min-height:60px;font-size:17px;padding:0 30px}
+.btn .ic{font-size:18px}
+.link{color:var(--blue);text-decoration:underline dotted;text-underline-offset:4px;font-weight:500}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:var(--soft2);font-size:13px;font-weight:500;color:var(--ink2)}
+.navy .chip{background:rgba(255,255,255,.1);color:#DCE4F2}
+.chip.or{background:#FFF1DD;color:#C86A00}
+.chip.bl{background:var(--blueXL);color:var(--blue2)}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid rgba(226,231,239,.7)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.02em}
+.logo .lg{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#7FB0FF,var(--blue2));display:grid;place-items:center;color:#fff;font-size:16px;box-shadow:0 6px 16px rgba(54,114,232,.35)}
+.logo small{display:block;font-size:11px;font-weight:500;color:var(--mute);letter-spacing:0}
+.nav{display:none;gap:26px;font-size:15px}
+.nav a{text-decoration:none;color:var(--ink2)} .nav a:hover{color:var(--blue)}
+.topcta{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:12px;background:var(--ink);color:#fff;font-size:14px;font-weight:600;text-decoration:none}
+.tright{display:flex;align-items:center;gap:8px}
+.vbtn{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 12px;border-radius:12px;background:var(--soft);font-size:14px;font-weight:600;color:var(--ink2)}
+.vbtn .ic{font-size:18px;color:var(--blue)}
+html.no-tts .vbtn{display:none}
+@media (max-width:419px){.vbtn span,.logo small{display:none}.vbtn{padding:0 10px}.topcta{padding:0 12px}}
+.vsheet .box{text-align:left;max-height:calc(100vh - 32px);overflow:auto}
+.vacc{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.vacc button{height:34px;padding:0 12px;border-radius:999px;background:var(--soft);font-size:13.5px;font-weight:600;color:var(--ink2)}
+.vacc button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.vlist{display:grid;gap:6px;margin-top:12px;max-height:240px;overflow:auto;padding:2px}
+.vlist button{display:flex;align-items:center;gap:10px;text-align:left;min-height:48px;padding:8px 12px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);font-size:14.5px;font-weight:500;line-height:1.25}
+.vlist button small{display:block;font-size:12px;color:var(--mute);font-weight:500}
+.vlist button .rb{flex:none;width:18px;height:18px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--mute2)}
+.vlist button[aria-checked="true"]{box-shadow:inset 0 0 0 2px var(--blue);background:#F5F9FF}
+.vlist button[aria-checked="true"] .rb{box-shadow:inset 0 0 0 5px var(--blue)}
+.vlist .empty{font-size:14px;color:var(--mute);padding:8px 2px}
+.vrate{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
+.vrb{display:flex;gap:4px;padding:4px;border-radius:12px;background:var(--soft)}
+.vrb button{height:34px;padding:0 10px;border-radius:9px;font-size:13px;font-weight:600;color:var(--ink2)}
+.vrb button[aria-pressed="true"]{background:#fff;color:var(--blue2);box-shadow:0 2px 8px rgba(28,37,57,.12)}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:linear-gradient(90deg,var(--blue),var(--or));transform-origin:0 50%;scale:0 1}
+
+/* ---------- glass + cubes ---------- */
+.glass{position:absolute;border-radius:999px;pointer-events:none;
+  background:linear-gradient(140deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,.18) 38%,rgba(170,205,255,.22) 70%,rgba(255,255,255,.55) 100%);
+  border:1px solid rgba(255,255,255,.65);
+  box-shadow:inset 3px 4px 8px rgba(255,255,255,.95),inset -10px -16px 26px rgba(40,95,210,.32),0 26px 50px rgba(18,55,150,.28)}
+.glass::after{content:"";position:absolute;left:18%;top:9%;width:22%;height:46%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,0))}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;background:conic-gradient(from 200deg,rgba(255,170,220,.0),rgba(255,190,140,.28),rgba(140,255,230,.22),rgba(180,160,255,.28),rgba(255,170,220,0));mix-blend-mode:screen;opacity:.8}
+.ring{position:absolute;border-radius:50%;pointer-events:none;border:26px solid rgba(255,255,255,.28);box-shadow:inset 6px 8px 14px rgba(255,255,255,.75),inset -10px -14px 22px rgba(30,80,200,.30),0 30px 60px rgba(18,55,150,.28),6px 8px 14px rgba(255,255,255,.35)}
+.floaty{animation:floaty 7s ease-in-out infinite}
+.floaty.d2{animation-duration:9s;animation-delay:-3s}
+.floaty.d3{animation-duration:8s;animation-delay:-5s}
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -14px}}
+
+.cube{--s:84px;--h:104px;position:relative;width:calc(var(--s)*1.45);height:calc(var(--h) + var(--s)*.9);perspective:none}
+.cube .rot{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d;transform:rotateX(-30deg) rotateY(-45deg)}
+.cube .fc{position:absolute;display:grid;place-items:center}
+.cube .fr{width:var(--s);height:var(--h);margin:calc(var(--h)/-2) 0 0 calc(var(--s)/-2);transform:translateZ(calc(var(--s)/2));border-radius:0 0 14px 14px}
+.cube .rt{width:var(--s);height:var(--h);margin:calc(var(--h)/-2) 0 0 calc(var(--s)/-2);transform:rotateY(90deg) translateZ(calc(var(--s)/2));border-radius:0 0 14px 14px}
+.cube .tp{width:var(--s);height:var(--s);margin:calc(var(--s)/-2) 0 0 calc(var(--s)/-2);transform:rotateX(90deg) translateZ(calc(var(--h)/2));border-radius:16px}
+.cube .tp > *{transform:rotate(-45deg) scale(1.15);color:#fff;font-size:calc(var(--s)*.34);font-weight:600}
+.cube.b .fr{background:linear-gradient(180deg,#7DB0FF,#4C89F1)} .cube.b .rt{background:linear-gradient(180deg,#5B95F4,#2F64D2)} .cube.b .tp{background:linear-gradient(135deg,#B5D3FF,#6FA6FA)}
+.cube.w .fr{background:linear-gradient(180deg,#FFFFFF,#E3E8F0)} .cube.w .rt{background:linear-gradient(180deg,#E9EDF4,#C9D2E0)} .cube.w .tp{background:linear-gradient(135deg,#FFFFFF,#EEF2F8)}
+.cube.w .tp > *{color:#8D9BB8}
+.cube.n .fr{background:linear-gradient(180deg,#3A4865,#253049)} .cube.n .rt{background:linear-gradient(180deg,#2C3852,#18203A)} .cube.n .tp{background:linear-gradient(135deg,#4B5A7C,#2E3A57);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.18)}
+.cube.o .fr{background:linear-gradient(180deg,#FFC060,#FF9A18)} .cube.o .rt{background:linear-gradient(180deg,#FF9E2C,#E87400)} .cube.o .tp{background:linear-gradient(135deg,#FFD58E,#FFAA3A)}
+.cubes{position:relative;height:200px}
+.cubes .cube{position:absolute}
+
+/* ---------- hero ---------- */
+.hero{padding-top:12px}
+.hero .card.navy{padding:34px 20px 0;min-height:620px;text-align:center}
+.hero .h1 .ln{display:block}
+.hero .lede{margin:18px auto 0}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
+.hero .scene{position:relative;height:270px;margin:20px -20px 0}
+.hero .scene > *{position:absolute}
+.hero .scene .ring{width:200px;height:200px;left:calc(50% - 170px);top:30px}
+.hero .scene .g1{width:70px;height:190px;left:calc(50% + 60px);top:20px;rotate:28deg}
+.hero .scene .g2{width:56px;height:150px;left:calc(50% + 130px);top:90px;rotate:-22deg}
+.hero .scene .c1{left:calc(50% - 70px);top:80px}
+.hero .scene .c2{left:calc(50% - 10px);top:120px;--s:64px;--h:80px}
+.hero .scene .c3{left:calc(50% - 150px);top:150px;--s:56px;--h:66px}
+.mini{display:grid;gap:14px;margin-top:14px}
+.mini .card{padding:22px 20px;display:flex;align-items:center;gap:16px}
+.mini .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:24px;flex:none}
+.mini .soft .ico{background:#fff;color:var(--blue);box-shadow:var(--sh)}
+.mini .blue .ico{background:rgba(255,255,255,.2);color:#fff}
+.mini b{display:block;font-size:17px;font-weight:600}
+.mini span{font-size:14px;color:var(--mute)}
+.mini .blue span{color:#E2ECFF}
+
+/* ---------- story / steps ---------- */
+.steps{display:grid;gap:0;margin-top:26px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14);position:relative}
+.step:last-child{border:0}
+.step .no{font-size:15px;color:var(--mute2);font-weight:500;padding-top:3px}
+.step h4{margin:0;font-size:clamp(19px,5vw,24px);font-weight:600;line-height:1.2;letter-spacing:-.01em}
+.step h4 em{font-style:normal;color:var(--or)}
+.step p{margin:6px 0 0;color:#C9D3E5;font-size:15.5px}
+.step .cubes{grid-column:1/-1;height:150px;margin-top:4px}
+.step .cube{--s:64px;--h:84px}
+.step .cube.ka{left:calc(50% - 80px);top:4px}.step .cube.kb{left:calc(50% - 6px);top:26px;--s:52px;--h:58px}
+
+/* map */
+.mapc{position:relative;color:var(--ink);margin-top:22px;border-radius:22px;background:#EEF2F8;overflow:hidden;aspect-ratio:1.25/1}
+.mapc svg{position:absolute;inset:0;width:100%;height:100%}
+.mapc .lbl{position:absolute;padding:8px 12px;border-radius:12px;background:#fff;font-size:13px;font-weight:600;box-shadow:var(--sh);white-space:nowrap}
+.mapc .lbl small{display:block;font-weight:500;color:var(--mute);font-size:11px}
+.mapc .tag{position:absolute;left:12px;bottom:12px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.92);font-size:clamp(18px,4.6vw,26px);font-weight:600;line-height:1.08;letter-spacing:-.02em}
+
+/* ---------- takeaways + route ---------- */
+.keys{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.keys li{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:18px;padding:14px 16px;box-shadow:0 6px 20px rgba(28,37,57,.05)}
+.keys .ic{color:var(--blue);font-size:20px;margin-top:2px}
+.keys b{font-weight:600}
+.route{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;margin:22px calc(var(--gut)*-1) 0;padding:6px var(--gut) 10px;scroll-snap-type:x mandatory}
+.route::-webkit-scrollbar{display:none}
+.route a{flex:none;scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;width:150px;padding:16px;border-radius:20px;background:#fff;text-decoration:none;box-shadow:0 6px 20px rgba(28,37,57,.06);transition:translate .25s}
+.route a:hover{translate:0 -4px}
+.route .n{font-size:13px;color:var(--mute)}
+.route b{font-weight:600;font-size:15px;line-height:1.25}
+.route .ic{font-size:22px;color:var(--or)}
+.rline{height:3px;border-radius:3px;background:var(--line);margin-top:4px;position:relative;overflow:hidden}
+.rline i{position:absolute;inset:0;background:linear-gradient(90deg,var(--or),var(--blue));transform-origin:0 50%;scale:0 1}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
+.stat{position:relative;border-radius:22px;padding:18px 16px;min-height:150px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));box-shadow:inset 0 0 0 1px rgba(255,255,255,.10);display:flex;flex-direction:column;justify-content:space-between;gap:10px;overflow:hidden}
+.stat.hot{background:radial-gradient(80% 60% at 30% 100%,rgba(255,160,28,.5),transparent 70%),linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.04))}
+.stat .num{font-size:clamp(44px,12vw,92px);font-weight:600;letter-spacing:-.04em;line-height:.9}
+.stat.hot .num{color:var(--or)}
+.stat p{margin:0;font-size:14px;color:#C9D3E5;line-height:1.35}
+.stat p b{color:#fff;font-weight:600}
+
+/* ---------- structure builder ---------- */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:22px calc(var(--gut)*-1) 0;padding:4px var(--gut)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;height:44px;padding:0 16px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);font-weight:600;font-size:14.5px;color:var(--ink2);transition:background .25s,color .25s,box-shadow .25s}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff;box-shadow:none}
+.navy .tab{background:rgba(255,255,255,.08);color:#DCE4F2;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+.navy .tab[aria-selected="true"]{background:#fff;color:var(--ink)}
+.bld{margin-top:18px;display:grid;gap:16px}
+.stage{position:relative;border-radius:22px;background:#fff;min-height:260px;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden;padding:18px}
+.stage .grid{position:absolute;inset:0;background-image:radial-gradient(#D7DEEA 1.2px,transparent 1.3px);background-size:22px 22px;opacity:.7}
+.blocks{position:relative;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;gap:10px;min-height:220px;padding-top:10px}
+.blk{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:14px 14px 12px;border-radius:18px;color:#fff;font-weight:600;font-size:14px;line-height:1.25;max-width:100%;transition:scale .45s cubic-bezier(.3,1.6,.5,1),opacity .35s,translate .45s;box-shadow:0 14px 30px rgba(28,60,140,.18)}
+.blk small{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.blk.main{background:linear-gradient(160deg,#6EA5FA,var(--blue2));min-height:120px;width:150px}
+.blk.dep{background:linear-gradient(160deg,#FFC064,var(--or2));min-height:84px;width:132px}
+.blk.cj{background:var(--ink);min-height:44px;width:auto;padding:10px 14px;border-radius:999px;align-self:center;font-size:15px;box-shadow:none}
+.blk.cj.or{background:#FFF1DD;color:#C86A00}
+.blk.off{display:none}
+.blk.pop{animation:pop .55s cubic-bezier(.3,1.7,.5,1)}
+@keyframes pop{0%{scale:.5}100%{scale:1}}
+.ex{border-radius:20px;background:var(--soft);padding:18px}
+.ex .en{display:flex;gap:10px;align-items:flex-start;font-size:clamp(18px,4.8vw,22px);font-weight:600;line-height:1.3;letter-spacing:-.01em}
+.ex .ru{margin:8px 0 0;color:var(--ink2);font-size:15px}
+.ex .rule{margin:12px 0 0;display:flex;gap:8px;align-items:flex-start;font-size:14.5px;color:var(--ink2)}
+.ex .rule .ic{color:var(--or);margin-top:3px}
+.ex mark{background:none;color:var(--blue2);font-weight:700}
+.ex mark.o{color:var(--or2)}
+.say{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--blue);box-shadow:0 4px 14px rgba(28,37,57,.10);font-size:17px;transition:background .2s,color .2s}
+.say.on{background:var(--blue);color:#fff}
+html.no-tts .say{display:none}
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:14px;font-size:13px;font-weight:600}
+.formula span{padding:6px 10px;border-radius:10px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.formula span.m{background:var(--blueXL);color:var(--blue2);box-shadow:none}
+.formula span.d{background:#FFF1DD;color:#C86A00;box-shadow:none}
+.formula i{font-style:normal;color:var(--mute)}
+
+/* trap */
+.trap{display:flex;gap:14px;align-items:flex-start;margin-top:16px;padding:18px;border-radius:20px;background:#FFF6EA;border:1px dashed #FFC77A}
+.trap .ic{color:var(--or2);font-size:24px;flex:none;margin-top:2px}
+.trap p{margin:0;font-size:15px;color:var(--ink2)}
+.trap b{color:var(--ink)}
+
+/* ---------- dota chat ---------- */
+.chat{position:relative;margin-top:22px;border-radius:22px;background:#121827;padding:16px;min-height:330px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.chat .bar{display:flex;align-items:center;gap:8px;font-size:12px;color:#7F8BA6;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.08)}
+.chat .bar i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}
+.msgs{display:flex;flex-direction:column;gap:10px;padding-top:14px}
+.msg{display:grid;grid-template-columns:30px minmax(0,1fr);gap:6px 10px;align-items:start;justify-items:start;opacity:0;translate:0 10px;transition:opacity .4s,translate .4s}
+.msg.in{opacity:1;translate:0 0}
+.no-js .msg,.reduce .msg{opacity:1;translate:0 0}
+.msg .av{grid-row:span 2;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;flex:none}
+.msg .bub{background:rgba(255,255,255,.06);border-radius:4px 14px 14px 14px;padding:8px 12px;color:#E8EDF6;font-size:15px}
+.msg .bub small{display:block;font-size:11px;color:#7F8BA6;margin-bottom:2px}
+.msg .tp{grid-column:2;font-size:11px;font-weight:600;padding:4px 8px;border-radius:8px;white-space:nowrap}
+.tp.frag{background:rgba(255,160,28,.15);color:#FFB547}
+.tp.imp{background:rgba(79,143,247,.18);color:#8DB7FF}
+.tp.q{background:rgba(34,195,142,.16);color:#5EE0B2}
+
+/* ---------- purpose morph ---------- */
+.morph{margin-top:22px;border-radius:24px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);padding:22px 18px;display:grid;gap:16px;position:relative;overflow:hidden}
+.morph .glyph{position:absolute;right:-6px;top:-30px;font-size:180px;font-weight:700;line-height:1;color:var(--blueXL);transition:color .4s;pointer-events:none}
+.morph .kind{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--blue2);font-size:14px;letter-spacing:.06em;text-transform:uppercase;position:relative}
+.morph .sent{position:relative;font-size:clamp(26px,7.4vw,46px);font-weight:600;letter-spacing:-.03em;line-height:1.08;min-height:2.2em}
+.morph .sent .w{display:inline-block;transition:opacity .35s,translate .35s}
+.morph .sent .w.out{opacity:0;translate:0 12px}
+.morph .sent .p{color:var(--or)}
+.morph .ru{position:relative;color:var(--ink2);margin:0}
+.morph .dots{display:flex;gap:6px;position:relative}
+.morph .dots button{width:30px;height:6px;border-radius:6px;background:var(--line);transition:background .3s,width .3s}
+.morph .dots button.on{background:var(--or);width:46px}
+.pcards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+.pc{background:var(--soft);border-radius:20px;padding:16px;text-align:left;display:flex;flex-direction:column;gap:10px;transition:translate .25s,background .25s;border:0}
+.pc:hover{translate:0 -3px}
+.pc.on{background:#fff;box-shadow:var(--sh)}
+.pc .pi{width:54px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:24px;font-weight:700;color:#fff;background:linear-gradient(135deg,#7DB0FF,var(--blue2))}
+.pc.on .pi{background:linear-gradient(135deg,#FFC064,var(--or2))}
+.pc b{font-weight:600;font-size:15px;line-height:1.2;-webkit-hyphens:auto;hyphens:auto;overflow-wrap:anywhere}
+.pc span{font-size:13.5px;color:var(--mute);line-height:1.35}
+
+/* ---------- conditionals ladder ---------- */
+.ladder{display:grid;gap:18px;margin-top:22px}
+.pillars{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:12px;height:250px;padding:0 6px;border-radius:22px;background:linear-gradient(180deg,#F6F8FB,#EEF2F8);overflow:hidden}
+.pil{position:relative;flex:1;max-width:84px;border-radius:16px 16px 0 0;background:linear-gradient(180deg,#E4E9F1,#CBD4E2);transition:height .7s cubic-bezier(.3,1.3,.5,1),background .4s;display:flex;justify-content:center}
+.pil.on{background:linear-gradient(180deg,#8DBBFF,var(--blue2))}
+.pil i{position:absolute;top:-34px;font-style:normal;font-weight:700;font-size:15px;color:var(--ink2)}
+.pil.on i{color:var(--blue2)}
+.pil::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;border-radius:16px 16px 0 0;background:rgba(255,255,255,.45)}
+.pillars .cap{position:absolute;left:14px;top:12px;z-index:2;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.lv button{height:52px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);font-weight:700;font-size:16px;transition:background .25s,color .25s}
+.lv button[aria-pressed="true"]{background:var(--or);color:#fff;box-shadow:0 10px 24px rgba(255,140,0,.3)}
+.meter{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mute);margin-top:12px}
+.meter .bar{flex:1;height:8px;border-radius:8px;background:var(--line);overflow:hidden}
+.meter .bar i{display:block;height:100%;width:50%;border-radius:8px;background:linear-gradient(90deg,var(--or),var(--blue));transition:width .6s}
+
+/* ---------- video ---------- */
+.vids{display:grid;gap:14px;margin-top:22px}
+.yt{position:relative;border-radius:22px;overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:var(--sh)}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.88;transition:opacity .3s,scale .6s}
+.yt:hover img{opacity:1;scale:1.03}
+.yt button{position:absolute;inset:0;display:grid;place-items:center}
+.yt .pl{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--or2);font-size:28px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.yt .pl .ic{fill:currentColor;translate:3px 0}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vcap{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-top:10px}
+.vcap b{font-weight:600;font-size:15.5px}
+.vcap span{font-size:13px;color:var(--mute)}
+
+/* ---------- practice ---------- */
+.ptop{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.score{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:12px;background:#fff;font-weight:600;font-size:14px;box-shadow:inset 0 0 0 1px var(--line)}
+.score .ic{color:var(--or)}
+.sorter{margin-top:14px;border-radius:22px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);padding:20px 16px}
+.sorter .q{font-size:clamp(19px,5vw,24px);font-weight:600;line-height:1.3;letter-spacing:-.01em;min-height:3.9em;display:flex;gap:10px;align-items:flex-start}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
+.opt{min-height:54px;border-radius:14px;background:var(--soft);font-weight:600;font-size:14.5px;padding:8px 10px;line-height:1.2;transition:background .2s,color .2s,scale .2s}
+.opt:hover{background:var(--soft2)}
+.opt.ok{background:var(--green);color:#fff}
+.opt.bad{background:var(--red);color:#fff}
+.opt:disabled{cursor:default}
+.fb{margin-top:12px;font-size:14.5px;color:var(--ink2);min-height:1.5em}
+.fb b{color:var(--ink)}
+.nextb{margin-top:12px}
+.dotsrow{display:flex;gap:5px;margin-top:16px}
+.dotsrow i{flex:1;height:5px;border-radius:5px;background:var(--line)}
+.dotsrow i.ok{background:var(--green)}.dotsrow i.bad{background:var(--red)}
+
+.glue{margin-top:14px;display:grid;gap:12px}
+.gl-card{border-radius:22px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);padding:18px 16px}
+.gl-card .parts{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:17px;font-weight:600;line-height:1.35}
+.gl-card .slot{min-width:84px;height:38px;border-radius:12px;border:2px dashed var(--mute2);display:inline-grid;place-items:center;padding:0 10px;color:var(--mute);transition:background .25s,border-color .25s,color .25s}
+.gl-card .slot.ok{border:0;background:var(--green);color:#fff}
+.gl-card .slot.bad{border:0;background:var(--red);color:#fff}
+.gl-card .ru{font-size:14px;color:var(--mute);margin:8px 0 0}
+.cjs{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.cjs button{height:38px;padding:0 14px;border-radius:12px;background:var(--soft);font-weight:600;font-size:14.5px}
+.cjs button:hover{background:var(--soft2)}
+.gl-card .why{font-size:14px;color:var(--ink2);margin:10px 0 0;min-height:1.2em}
+
+/* quiz */
+.quiz{margin-top:22px;border-radius:24px;background:#fff;padding:22px 18px;color:var(--ink);position:relative;overflow:hidden}
+.quiz .qn{font-size:13px;color:var(--mute);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.quiz .qq{font-size:clamp(20px,5.4vw,26px);font-weight:600;line-height:1.25;letter-spacing:-.01em;margin:10px 0 16px}
+.quiz .qa{display:grid;gap:8px}
+.quiz .qa button{text-align:left;min-height:52px;padding:12px 16px;border-radius:14px;background:var(--soft);font-weight:500;font-size:15.5px;line-height:1.3;transition:background .2s,color .2s}
+.quiz .qa button:hover{background:var(--soft2)}
+.quiz .qa button.ok{background:var(--green);color:#fff}
+.quiz .qa button.bad{background:var(--red);color:#fff}
+.quiz .qx{margin:14px 0 0;font-size:14.5px;color:var(--ink2);min-height:1.4em}
+.quiz .res{text-align:center;padding:10px 0}
+.quiz .res .big{font-size:72px;font-weight:700;letter-spacing:-.04em;line-height:1;color:var(--or)}
+#confetti{position:absolute;inset:0;pointer-events:none;width:100%;height:100%}
+
+/* ---------- cheat ---------- */
+.cheat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.ch{border-radius:20px;background:#fff;padding:16px;box-shadow:0 6px 20px rgba(28,37,57,.05);display:flex;flex-direction:column;gap:8px}
+.ch .ci{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--blueXL);color:var(--blue2);font-size:20px}
+.ch.o .ci{background:#FFF1DD;color:#C86A00}
+.ch b{font-weight:600;font-size:15px;line-height:1.25}
+.ch code{font-family:inherit;font-size:13px;color:var(--ink2);line-height:1.4}
+.ch code em{font-style:normal;color:var(--or2);font-weight:600}
+
+/* ---------- faq ---------- */
+.faq{margin-top:20px;display:grid;gap:10px}
+.faq details{border-radius:18px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px;font-weight:600;font-size:16px;line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ic{flex:none;color:var(--mute);transition:rotate .3s}
+.faq details[open] summary .ic{rotate:180deg;color:var(--or)}
+.faq details p{margin:0;padding:0 18px 18px;color:var(--ink2);font-size:15px}
+
+/* ---------- platform (ad) ---------- */
+.optin{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.optin .no{background:transparent;color:#DCE4F2;min-height:44px;font-weight:500;text-decoration:underline;text-underline-offset:4px}
+.optmsg{margin-top:12px;color:#DCE4F2;font-size:15px;min-height:1px}
+.lvls{display:grid;gap:14px;margin-top:6px}
+.lvl{position:relative;border-radius:26px;padding:22px 18px;background:#fff;box-shadow:var(--sh);display:flex;flex-direction:column;gap:12px;overflow:hidden;border:2px solid transparent;transition:border-color .3s,translate .3s}
+.lvl:hover{translate:0 -3px}
+.lvl.hot{border-color:var(--or)}
+.lvl .flag{position:absolute;right:16px;top:16px;font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;background:#FFF1DD;color:#C86A00}
+.lvl .lname{font-size:44px;font-weight:600;letter-spacing:-.04em;line-height:1}
+.lvl .lname span{color:var(--mute)}
+.lvl p{margin:0;color:var(--ink2);font-size:15px}
+.lvl ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.lvl li{display:flex;gap:10px;font-size:14.5px;line-height:1.35;color:var(--ink2)}
+.lvl li .ic{color:var(--green);font-size:18px;margin-top:1px}
+.lvl .btn{margin-top:auto}
+.bframe{border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 20px 50px rgba(15,25,50,.22);border:1px solid rgba(255,255,255,.4)}
+.bframe .bb{display:flex;align-items:center;gap:6px;height:30px;padding:0 12px;background:#F1F3F7;border-bottom:1px solid #E3E7EE}
+.bframe .bb i{width:9px;height:9px;border-radius:50%;background:#FF5F57}.bframe .bb i:nth-child(2){background:#FEBC2E}.bframe .bb i:nth-child(3){background:#28C840}
+.bframe .bb span{margin-left:8px;flex:1;height:18px;border-radius:6px;background:#fff;font-size:10.5px;color:#8D97A8;display:flex;align-items:center;padding:0 8px;overflow:hidden;white-space:nowrap}
+.bframe img,.bframe video{width:100%;height:auto;background:#fff}
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:22px calc(var(--gut)*-1) 0;padding:6px var(--gut) 24px}
+.shots::-webkit-scrollbar{display:none}
+.shot{flex:none;width:84%;max-width:560px;scroll-snap-align:center}
+.shot figcaption{margin-top:12px;font-size:14px;color:#DCE4F2;display:flex;gap:8px;align-items:flex-start}
+.shot figcaption .ic{color:var(--or);margin-top:3px}
+.blue .shot figcaption{color:#fff}
+.soft .shot figcaption{color:var(--ink2)}
+.feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.ft{border-radius:20px;padding:16px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);display:flex;flex-direction:column;gap:8px}
+.ft .ic{font-size:22px;color:var(--or)}
+.ft b{font-weight:600;font-size:15px;line-height:1.25}
+.ft span{font-size:13px;color:#C9D3E5;line-height:1.35}
+.road{display:grid;gap:10px;margin-top:20px}
+.rd{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;padding:14px 16px;border-radius:18px;background:#fff;box-shadow:0 6px 20px rgba(28,37,57,.05)}
+.rd .w{grid-row:span 2;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:var(--blueXL);color:var(--blue2);font-weight:700;font-size:18px}
+.rd.o .w{background:#FFF1DD;color:#C86A00}
+.rd b{font-weight:600}
+.rd span{font-size:13.5px;color:var(--mute)}
+.pop2{display:grid;gap:12px;margin-top:22px}
+.pp{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:20px;background:#fff;box-shadow:0 6px 20px rgba(28,37,57,.05)}
+.pp .k{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:700;color:#fff;background:linear-gradient(135deg,#7DB0FF,var(--blue2))}
+.pp.o .k{background:linear-gradient(135deg,#FFC064,var(--or2))}
+.pp b{display:block;font-weight:600}
+.pp span{font-size:14.5px;color:var(--ink2)}
+.final{text-align:center}
+.final .acts{display:flex;flex-direction:column;gap:10px;align-items:stretch;margin-top:24px}
+.dock{position:fixed;left:10px;right:10px;bottom:10px;z-index:60;display:flex;align-items:center;gap:12px;padding:10px 10px 10px 16px;border-radius:20px;background:rgba(28,37,57,.94);color:#fff;box-shadow:0 18px 40px rgba(10,15,30,.35);translate:0 140%;transition:translate .45s cubic-bezier(.3,1.3,.5,1)}
+.dock.on{translate:0 0}
+.dock .dt{flex:1;font-size:13.5px;line-height:1.25}
+.dock .dt b{display:block;font-size:15px;font-weight:600}
+.dock .btn{min-height:46px;padding:0 16px;font-size:15px;border-radius:14px}
+.toast{position:fixed;left:50%;bottom:90px;z-index:80;translate:-50% 30px;opacity:0;pointer-events:none;background:var(--ink);color:#fff;padding:12px 16px;border-radius:14px;font-size:14px;max-width:calc(100% - 32px);transition:opacity .3s,translate .3s;text-align:center}
+.toast.on{opacity:1;translate:-50% 0}
+.modal{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(15,20,35,.55)}
+.modal.on{display:flex}
+.modal .box{position:relative;width:100%;max-width:440px;border-radius:26px;padding:28px 20px 22px;background:#fff;text-align:center;animation:pop .5s cubic-bezier(.3,1.5,.5,1)}
+.modal .x{position:absolute;right:12px;top:12px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-size:18px}
+.modal .lvlb{display:grid;gap:8px;margin-top:18px}
+
+/* ---------- outro ---------- */
+.thanks{display:grid;gap:18px;align-items:center}
+.thanks .big{font-size:clamp(46px,14vw,120px);font-weight:600;letter-spacing:-.05em;line-height:.9;color:#7E8FB3}
+.thanks .big span{display:block;color:var(--ink2)}
+.likebox{display:flex;gap:10px}
+.likebox button{width:58px;height:58px;border-radius:50%;background:#fff;box-shadow:var(--sh);display:grid;place-items:center;font-size:22px;color:var(--blue2);transition:scale .2s,background .2s,color .2s}
+.likebox button.on{background:var(--blue2);color:#fff}
+.likebox button.on .ic{fill:currentColor}
+footer{padding:28px 0 110px;color:var(--mute);font-size:13px}
+footer .wrap{display:flex;flex-direction:column;gap:8px}
+
+/* ---------- reveal ---------- */
+.rv{translate:0 26px;transition:translate .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{translate:0 0}
+@media (prefers-reduced-motion:reduce){.rv{translate:none;transition:none}.floaty{animation:none}html{scroll-behavior:auto}.msg{opacity:1;translate:0 0}}
+
+/* ---------- desktop ---------- */
+@media (min-width:760px){
+  :root{--gut:28px}
+  .card{padding:48px 44px}
+  .grid2{grid-template-columns:1fr 1fr}
+  .mini{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .stat{min-height:330px}
+  .pcards{grid-template-columns:repeat(4,1fr)}
+  .cheat{grid-template-columns:repeat(4,1fr)}
+  .vids{grid-template-columns:1fr 1fr}
+  .lvls{grid-template-columns:repeat(3,1fr)}
+  .feat{grid-template-columns:repeat(4,1fr)}
+  .road{grid-template-columns:repeat(3,1fr)}
+  .pop2{grid-template-columns:1fr 1fr}
+  .opts{grid-template-columns:repeat(4,1fr)}
+  .final .acts{flex-direction:row;justify-content:center}
+  .dock{left:50%;right:auto;width:560px;margin-left:-280px}
+  .shot{width:62%}
+}
+@media (min-width:900px){
+  .nav{display:flex}
+  .hero .card.navy{padding:70px 60px 0;min-height:700px}
+  .hero .scene{height:330px}
+  .hero .scene .ring{width:260px;height:260px;left:calc(50% - 360px);top:20px}
+  .hero .scene .g1{width:96px;height:250px;left:calc(50% + 190px);top:10px}
+  .hero .scene .g2{width:72px;height:190px;left:calc(50% + 300px);top:110px}
+  .hero .scene .c1{--s:110px;--h:140px;left:calc(50% - 100px);top:60px}
+  .hero .scene .c2{--s:84px;--h:104px;left:calc(50% + 10px);top:140px}
+  .hero .scene .c3{--s:70px;--h:84px;left:calc(50% - 220px);top:170px}
+  .stage{min-height:320px}
+  .bld{grid-template-columns:1.25fr 1fr;align-items:stretch}
+  .ladder{grid-template-columns:1fr 1fr;align-items:start}
+  .pillars{height:340px}
+  .steps .step{grid-template-columns:70px 1fr 220px;align-items:center}
+  .step .cubes{grid-column:auto;height:150px}
+  .stat{writing-mode:vertical-rl;rotate:180deg;flex-direction:row;justify-content:flex-end;align-items:flex-start;padding:22px 18px}
+  .stat p{max-height:240px}
+  .keys{grid-template-columns:1fr 1fr}
+  .mapc{aspect-ratio:2.1/1}
+  .glass,.ring{-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+}
+@media (max-width:899px){.glass::before{mix-blend-mode:normal;opacity:.45}}
+</style>
+
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-gamepad-2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+<symbol id="i-git-branch" viewBox="0 0 24 24"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-circle-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+<symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+<symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol>
+<symbol id="i-swords" viewBox="0 0 24 24"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></symbol>
+<symbol id="i-crown" viewBox="0 0 24 24"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol>
+<symbol id="i-rotate-ccw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+<symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol>
+<symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+<symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></symbol>
+<symbol id="i-footprints" viewBox="0 0 24 24"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></symbol>
+<symbol id="i-dices" viewBox="0 0 24 24"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></symbol>
+<symbol id="i-wand" viewBox="0 0 24 24"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+<symbol id="i-mouse-pointer-click" viewBox="0 0 24 24"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></symbol>
+<symbol id="i-unplug" viewBox="0 0 24 24"><path d="m19 5 3-3"/><path d="m2 22 3-3"/><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"/><path d="M7.5 13.5 10 11"/><path d="M10.5 16.5 13 14"/><path d="m12 6 6 6 2.3-2.3a2.4 2.4 0 0 0 0-3.4l-2.6-2.6a2.4 2.4 0 0 0-3.4 0Z"/></symbol>
+<symbol id="i-pizza" viewBox="0 0 24 24"><path d="m12 14-1 1"/><path d="m13.75 18.25-1.25 1.42"/><path d="M17.775 5.654a15.68 15.68 0 0 0-12.121 12.12"/><path d="M18.8 9.3a1 1 0 0 0 2.1 7.7"/><path d="M21.964 20.732a1 1 0 0 1-1.232 1.232l-18-5a1 1 0 0 1-.695-1.232A19.68 19.68 0 0 1 15.732 2.037a1 1 0 0 1 1.232.695z"/></symbol>
+<symbol id="i-volleyball" viewBox="0 0 24 24"><path d="M11.1 7.1a16.55 16.55 0 0 1 10.9 4"/><path d="M12 12a12.6 12.6 0 0 1-8.7 5"/><path d="M16.8 13.6a16.55 16.55 0 0 1-9 7.5"/><path d="M20.7 17a12.8 12.8 0 0 0-8.7-5 13.3 13.3 0 0 1 0-10"/><path d="M6.3 3.8a16.55 16.55 0 0 0 1.9 11.5"/><circle cx="12" cy="12" r="10"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+<symbol id="i-audio-lines" viewBox="0 0 24 24"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></symbol>
+<symbol id="i-sliders-horizontal" viewBox="0 0 24 24"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></symbol>
+
+</defs></svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#hero"><span class="lg"><svg class="ic"><use href="#i-gamepad-2"/></svg></span><span>Dias English<small>гайд по грамматике</small></span></a>
+    <nav class="nav"><a href="#structure">Структура</a><a href="#purpose">Цель</a><a href="#cond">If</a><a href="#practice">Практика</a></nav>
+    <div class="tright">
+      <button class="vbtn" id="vOpen" aria-haspopup="dialog" aria-label="Выбрать озвучку"><svg class="ic"><use href="#i-audio-lines"/></svg><span>Голос</span></button>
+      
+      <a class="topcta" href="#quiz"><svg class="ic"><use href="#i-trophy"/></svg> Тест</a>
+    </div>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="card navy">
+      <span class="eyebrow"><svg class="ic"><use href="#i-clock"/></svg> 7 минут чтения · A2–B1</span>
+      <h1 class="h1 split"><span class="ln">Типы предложений</span> <span class="ln"><span class="or">в английском</span> <span class="t2">без зубрёжки</span></span></h1>
+      <p class="lede">Я выучил английский в <b>Dota-чате</b>, а не за партой. Здесь всё, что нужно про типы предложений: <b>схемы, видео, упражнения и тест</b>.</p>
+      <div class="acts">
+        <a class="btn big" href="#story"><svg class="ic"><use href="#i-key"/></svg> Начать гайд</a>
+        
+        <a class="btn big ghost" href="#practice">Сразу к практике</a>
+      </div>
+      <div class="meta"><span class="chip"><svg class="ic"><use href="#i-layers"/></svg> 4 по структуре</span><span class="chip"><svg class="ic"><use href="#i-message-circle"/></svg> 4 по цели</span><span class="chip"><svg class="ic"><use href="#i-git-branch"/></svg> 4 вида if</span></div>
+      <div class="scene" aria-hidden="true">
+        <div class="ring floaty d2"></div>
+        <div class="glass g1 floaty"></div>
+        <div class="glass g2 floaty d3"></div>
+        <div class="cube b c1 floaty d3"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>S</span></div></div></div>
+        <div class="cube w c2 floaty"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>V</span></div></div></div>
+        <div class="cube o c3 floaty d2"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>?</span></div></div></div>
+      </div>
+    </div>
+    <div class="mini">
+      <div class="card soft rv"><div class="ico"><svg class="ic"><use href="#i-mouse-pointer-click"/></svg></div><div><b>Всё интерактивно</b><span>Жми на кубики, слушай фразы, двигай лестницу if</span></div></div>
+      <div class="card blue rv"><div class="ico"><svg class="ic"><use href="#i-trophy"/></svg></div><div><b>Тест на 6 вопросов</b><span>В конце: проверь себя за 2 минуты</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section id="story">
+  <div class="wrap">
+    <div class="card navy">
+      <span class="eyebrow"><svg class="ic"><use href="#i-map-pin"/></svg> Кто пишет этот гайд</span>
+      <h2 class="h2 split">Из аула Казыгурт <span class="t2">в Рим.</span> <span class="or">Через Dota.</span></h2>
+      <p class="lede">Меня зовут Диас. Я учусь в <b>Sapienza</b>, одном из главных университетов Италии. Свободно говорю по-итальянски. А начиналось всё с игры.</p>
+      <div class="steps">
+        <div class="step rv">
+          <span class="no">01</span>
+          <div><h4>Dota на английском. <em>С переводчиком</em> в соседней вкладке.</h4><p>Описания героев, предметов, патчей. Слов много. Я переводил каждое. Не потому что учил язык. Просто хотел понять игру.</p></div>
+          <div class="cubes" aria-hidden="true"><div class="cube b ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-gamepad-2"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>01</span></div></div></div></div>
+        </div>
+        <div class="step rv">
+          <span class="no">02</span>
+          <div><h4>Чат с тиммейтами. <em>Хочешь победить</em> — пиши.</h4><p>Короткие фразы. Вопросы. Команды. Так я прокачал разговорный. Потом сдал в НИШ. И понял: язык учится, когда тебе нравится процесс.</p></div>
+          <div class="cubes" aria-hidden="true"><div class="cube o ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-message-circle"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>02</span></div></div></div></div>
+        </div>
+        <div class="step rv">
+          <span class="no">03</span>
+          <div><h4>Тот же метод. <em>Итальянский</em> и Sapienza.</h4><p>Погружение, практика, свой подход. Сработало второй раз. Теперь путешествую по Европе и играю в футбольных лигах Италии.</p></div>
+          <div class="cubes" aria-hidden="true"><div class="cube n ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-graduation-cap"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>03</span></div></div></div></div>
+        </div>
+      </div>
+      <div class="mapc rv" id="map">
+        <svg viewBox="0 0 840 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#CBD4E2"/></pattern>
+          <linearGradient id="zone" x1="0" x2="1"><stop offset="0" stop-color="#FFA01C" stop-opacity=".35"/><stop offset="1" stop-color="#FFA01C" stop-opacity=".12"/></linearGradient></defs>
+          <rect width="840" height="400" fill="url(#dots)"/>
+          <path d="M120 210 C 240 120, 380 60, 520 110 S 700 260, 740 200" fill="none" stroke="#CBD4E2" stroke-width="10" stroke-linecap="round"/>
+          <path id="mapPath" d="M740 200 C 700 120, 560 40, 420 70 S 190 150, 120 210" fill="none" stroke="#FFA01C" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <polygon points="650,150 760,130 800,215 740,280 660,250" fill="url(#zone)" stroke="#FFA01C" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="740" cy="200" r="9" fill="#FFA01C"/><circle cx="740" cy="200" r="18" fill="#FFA01C" opacity=".25"/>
+          <circle cx="120" cy="210" r="9" fill="#3672E8"/><circle cx="120" cy="210" r="18" fill="#3672E8" opacity=".25"/>
+          <g id="plane"><circle r="17" fill="#fff"/><path d="M-7 1 L8 -4 L4 1 L8 6 Z" fill="#3672E8"/></g>
+        </svg>
+        <div class="lbl" style="right:6%;top:12%">Казыгурт<small>старт · Dota</small></div>
+        <div class="lbl" style="left:4%;top:18%">Рим<small>Sapienza</small></div>
+        <div class="tag">Язык это <span class="or">маршрут</span>,<br><span class="t2">а не предмет</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TAKEAWAYS + ROUTE ============ -->
+<section id="takeaways">
+  <div class="wrap">
+    <div class="card soft">
+      <span class="eyebrow"><svg class="ic"><use href="#i-zap"/></svg> Запомни за 30 секунд</span>
+      <h2 class="h2 split">Весь гайд <span class="t2">в пяти строках</span></h2>
+      <ul class="keys">
+        <li class="rv"><svg class="ic"><use href="#i-layers"/></svg><span><b>По структуре</b> предложения бывают простые, сложносочинённые, сложноподчинённые и смешанные.</span></li>
+        <li class="rv"><svg class="ic"><use href="#i-link"/></svg><span><b>Сочинение</b> это равные части. Клей: <b>and, but, or, so</b>.</span></li>
+        <li class="rv"><svg class="ic"><use href="#i-git-branch"/></svg><span><b>Подчинение</b> это главная + зависимая. Клей: <b>because, when, if, that, who</b>.</span></li>
+        <li class="rv"><svg class="ic"><use href="#i-message-circle"/></svg><span><b>По цели</b>: утверждение, вопрос, восклицание, просьба. Решает знак в конце и порядок слов.</span></li>
+        <li class="rv"><svg class="ic"><use href="#i-route"/></svg><span><b>If</b> бывает четырёх видов. Чем дальше от реальности, тем глубже в прошлое уходит глагол.</span></li>
+      </ul>
+      <div class="route" id="routeNav">
+        <a href="#structure"><span class="n">01</span><svg class="ic"><use href="#i-layers"/></svg><b>Конструктор структуры</b><span class="rline"><i></i></span></a>
+        <a href="#chat"><span class="n">02</span><svg class="ic"><use href="#i-swords"/></svg><b>Фразы из Dota-чата</b><span class="rline"><i></i></span></a>
+        <a href="#purpose"><span class="n">03</span><svg class="ic"><use href="#i-message-circle"/></svg><b>Четыре цели</b><span class="rline"><i></i></span></a>
+        <a href="#cond"><span class="n">04</span><svg class="ic"><use href="#i-git-branch"/></svg><b>Лестница if</b><span class="rline"><i></i></span></a>
+        <a href="#video"><span class="n">05</span><svg class="ic"><use href="#i-play"/></svg><b>Видео</b><span class="rline"><i></i></span></a>
+        <a href="#practice"><span class="n">06</span><svg class="ic"><use href="#i-puzzle"/></svg><b>Упражнения</b><span class="rline"><i></i></span></a>
+        <a href="#quiz"><span class="n">07</span><svg class="ic"><use href="#i-trophy"/></svg><b>Тест</b><span class="rline"><i></i></span></a>
+        <a href="#cheat"><span class="n">08</span><svg class="ic"><use href="#i-file-text"/></svg><b>Шпаргалка</b><span class="rline"><i></i></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section id="stats">
+  <div class="wrap">
+    <div class="card navy">
+      <h2 class="h2 split">Одна тема. <span class="or">Четыре</span> <span class="t2">способа посмотреть на фразу</span></h2>
+      <div class="stats">
+        <div class="stat rv"><span class="num"><span class="count" data-to="4">4</span></span><p><b>типа по структуре</b> · сколько основ и как они склеены</p></div>
+        <div class="stat hot rv"><span class="num"><span class="count" data-to="4">4</span></span><p><b>типа по цели</b> · сказать, спросить, удивиться, попросить</p></div>
+        <div class="stat rv"><span class="num"><span class="count" data-to="4">4</span></span><p><b>вида if</b> · от «всегда так» до «уже не исправить»</p></div>
+        <div class="stat rv"><span class="num"><span class="count" data-to="1">1</span></span><p><b>знак в конце</b> меняет весь тон фразы</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRUCTURE ============ -->
+<section id="structure">
+  <div class="wrap">
+    <div class="card soft">
+      <span class="eyebrow"><svg class="ic"><use href="#i-layers"/></svg> Часть 1 · Структура</span>
+      <h2 class="h2 split">Предложение это <span class="bl">кубики.</span> <span class="t2">Смотри, как они склеиваются</span></h2>
+      <p class="lede">Основа = <b>кто</b> + <b>что делает</b>. Одна основа, две, три. И клей между ними. Вот и вся классификация.</p>
+      <div class="tabs" role="tablist" id="stTabs">
+        <button class="tab" role="tab" aria-selected="true" data-k="0">Простое</button>
+        <button class="tab" role="tab" aria-selected="false" data-k="1">Сложносочинённое</button>
+        <button class="tab" role="tab" aria-selected="false" data-k="2">Сложноподчинённое</button>
+        <button class="tab" role="tab" aria-selected="false" data-k="3">Смешанное</button>
+      </div>
+      <div class="bld">
+        <div class="stage"><div class="grid"></div>
+          <div class="blocks" id="blocks">
+            <div class="blk main" data-b="m1"><small>главная</small>I play Dota</div>
+            <div class="blk cj" data-b="c1">and</div>
+            <div class="blk main" data-b="m2"><small>главная</small>I read every patch note</div>
+            <div class="blk cj or" data-b="c2">because</div>
+            <div class="blk dep" data-b="d1"><small>зависимая</small>it helps me win</div>
+          </div>
+        </div>
+        <div class="ex" id="stEx">
+          <div class="en"><button class="say" data-say="I play Dota." aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button><span id="stEn">I play Dota.</span></div>
+          <p class="ru" id="stRu">Я играю в Dota.</p>
+          <div class="formula" id="stF"><span class="m">кто + действие</span></div>
+          <p class="rule"><svg class="ic"><use href="#i-lightbulb"/></svg><span id="stRule">Одна основа. Никакого клея. Самый частый тип в чате.</span></p>
+        </div>
+      </div>
+      <div class="trap rv"><svg class="ic"><use href="#i-triangle-alert"/></svg><p><b>Подвох.</b> «The dog chewed the shoes <b>that I just bought</b>». Пёс сжевал кроссовки, <i>которые я только купил</i>. Часть «that I just bought» тут просто описывает кроссовки, как прилагательное. Поэтому Википедия считает такое предложение простым. В других источниках его называют сложноподчинённым. На экзамене смотри, чему учит твой учебник.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOTA CHAT ============ -->
+<section id="chat">
+  <div class="wrap">
+    <div class="card navy">
+      <span class="eyebrow"><svg class="ic"><use href="#i-swords"/></svg> Бонус-уровень</span>
+      <h2 class="h2 split">А это что за типы? <span class="t2">Фразы, которые</span> <span class="or">ломают правила</span></h2>
+      <p class="lede">В чате никто не пишет полными предложениями. «gg», «nice», «need help?». Без кого-то или без глагола. Это <b>неполные</b> и <b>односоставные</b> предложения. В живой речи их полно, и это нормально.</p>
+      <div class="chat" id="dchat">
+        <div class="bar"><i></i> all chat · 34:12</div>
+        <div class="msgs">
+          <div class="msg"><span class="av" style="background:#4F8FF7">D</span><div class="bub"><small>Dias</small>Need help mid?</div><span class="tp q">вопрос без подлежащего</span></div>
+          <div class="msg"><span class="av" style="background:#FF7A00">A</span><div class="bub"><small>Arman</small>Push top!</div><span class="tp imp">побудительное</span></div>
+          <div class="msg"><span class="av" style="background:#22C38E">M</span><div class="bub"><small>Marco</small>Nice one.</div><span class="tp frag">неполное</span></div>
+          <div class="msg"><span class="av" style="background:#4F8FF7">D</span><div class="bub"><small>Dias</small>Wait for me.</div><span class="tp imp">побудительное</span></div>
+          <div class="msg"><span class="av" style="background:#B07BFF">J</span><div class="bub"><small>Jake</small>What a play!</div><span class="tp frag">восклицание без глагола</span></div>
+          <div class="msg"><span class="av" style="background:#FF7A00">A</span><div class="bub"><small>Arman</small>gg wp</div><span class="tp frag">good game, well played</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PURPOSE ============ -->
+<section id="purpose">
+  <div class="wrap">
+    <div class="card soft">
+      <span class="eyebrow"><svg class="ic"><use href="#i-message-circle"/></svg> Часть 2 · Цель</span>
+      <h2 class="h2 split">Одна фраза. <span class="t2">Четыре настроения.</span> <span class="or">Решает финал</span></h2>
+      <p class="lede">Слова почти те же. Меняется порядок, вспомогательный глагол и знак в конце. Смотри.</p>
+      <div class="morph" id="morph">
+        <div class="glyph" id="mGlyph">.</div>
+        <div class="kind" id="mKind"><svg class="ic"><use href="#i-quote"/></svg> <span>Повествовательное</span></div>
+        <div class="sent" id="mSent">You read books.</div>
+        <p class="ru" id="mRu">Ты читаешь книги. Просто факт.</p>
+        <div class="dots" id="mDots"><button class="on" aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button><button aria-label="4"></button></div>
+      </div>
+      <div class="pcards" id="pcards">
+        <button class="pc on" data-k="0"><span class="pi">.</span><b>Повествовательное</b><span>Сообщает факт. Таких большинство.</span></button>
+        <button class="pc" data-k="1"><span class="pi">?</span><b>Вопросительное</b><span>Do / does / did выходят вперёд.</span></button>
+        <button class="pc" data-k="2"><span class="pi">!</span><b>Восклицательное</b><span>Эмоция. Часто с what или how.</span></button>
+        <button class="pc" data-k="3"><span class="pi">→</span><b>Побудительное</b><span>Просьба или команда. «Ты» прячется.</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONDITIONALS ============ -->
+<section id="cond">
+  <div class="wrap">
+    <div class="card white">
+      <span class="eyebrow"><svg class="ic"><use href="#i-git-branch"/></svg> Часть 3 · Условные</span>
+      <h2 class="h2 split">Лестница <span class="or">реальности:</span> <span class="t2">четыре вида if</span></h2>
+      <p class="lede">Жми на ступени. Чем ниже столбик, тем меньше шанс, что это случится. И тем глубже в прошлое уходит глагол.</p>
+      <div class="ladder">
+        <div>
+          <div class="pillars" id="pillars"><span class="cap">шанс, что это правда</span>
+            <div class="pil" style="height:78%"><i>0</i></div>
+            <div class="pil" style="height:58%"><i>I</i></div>
+            <div class="pil" style="height:32%"><i>II</i></div>
+            <div class="pil" style="height:10%"><i>III</i></div>
+          </div>
+          <div class="lv" id="lv" role="group" aria-label="Тип условного">
+            <button aria-pressed="true" data-k="0">0</button><button aria-pressed="false" data-k="1">I</button><button aria-pressed="false" data-k="2">II</button><button aria-pressed="false" data-k="3">III</button>
+          </div>
+        </div>
+        <div class="ex" id="cEx">
+          <div class="en"><button class="say" id="cSay" data-say="If you heat ice, it melts." aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button><span id="cEn">If you heat ice, it melts.</span></div>
+          <p class="ru" id="cRu">Если нагреть лёд, он тает.</p>
+          <div class="formula" id="cF"></div>
+          <p class="rule"><svg class="ic"><use href="#i-lightbulb"/></svg><span id="cRule"></span></p>
+          <div class="meter"><span>реальность</span><span class="bar"><i id="cMeter"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section id="video">
+  <div class="wrap">
+    <div class="card soft">
+      <span class="eyebrow"><svg class="ic"><use href="#i-play"/></svg> Посмотри и закрепи</span>
+      <h2 class="h2 split">Два коротких видео <span class="t2">вместо часа учебника</span></h2>
+      <div class="vids">
+        <div class="rv">
+          <div class="yt" data-id="xv89INEgJ0Y"><img src="../media/yt-xv89INEgJ0Y.webp" alt="Типы предложений в английском языке" loading="lazy" width="480" height="360"><button aria-label="Смотреть видео"><span class="pl"><svg class="ic"><use href="#i-play"/></svg></span></button></div>
+          <div class="vcap"><div><b>Типы предложений · Types of sentences</b><br><span>6:36 · обзор всей темы</span></div><a class="small link" href="https://www.youtube.com/watch?v=xv89INEgJ0Y" target="_blank" rel="noopener">YouTube</a></div>
+        </div>
+        <div class="rv">
+          <div class="yt" data-id="Wr_0g6jAL8o"><img src="../media/yt-Wr_0g6jAL8o.webp" alt="Conditionals 0, 1, 2, 3" loading="lazy" width="480" height="360"><button aria-label="Смотреть видео"><span class="pl"><svg class="ic"><use href="#i-play"/></svg></span></button></div>
+          <div class="vcap"><div><b>Conditionals 0, 1, 2, 3 раз и навсегда</b><br><span>4:26 · Ригина Папахина</span></div><a class="small link" href="https://www.youtube.com/watch?v=Wr_0g6jAL8o" target="_blank" rel="noopener">YouTube</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE ============ -->
+<section id="practice">
+  <div class="wrap">
+    <div class="card soft">
+      <span class="eyebrow"><svg class="ic"><use href="#i-puzzle"/></svg> Практика · 1</span>
+      <h2 class="h2 split">Сортировщик. <span class="t2">Определи тип</span> <span class="or">за секунду</span></h2>
+      <div class="ptop"><span class="small">Читай фразу и жми тип</span><span class="score"><svg class="ic"><use href="#i-star"/></svg> <span id="sScore">0</span>/<span id="sTot">8</span></span></div>
+      <div class="sorter" id="sorter">
+        <div class="q"><button class="say" id="sSay" aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button><span id="sQ"></span></div>
+        <div class="opts" id="sOpts">
+          <button class="opt" data-k="0">Простое</button><button class="opt" data-k="1">Сложно&shy;сочинённое</button><button class="opt" data-k="2">Сложно&shy;подчинённое</button><button class="opt" data-k="3">Смешанное</button>
+        </div>
+        <p class="fb" id="sFb"></p>
+        <button class="btn bl nextb" id="sNext" hidden>Дальше <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+        <div class="dotsrow" id="sDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="glue">
+  <div class="wrap">
+    <div class="card white">
+      <span class="eyebrow"><svg class="ic"><use href="#i-link"/></svg> Практика · 2</span>
+      <h2 class="h2 split">Склей фразы. <span class="t2">Выбери</span> <span class="or">правильный клей</span></h2>
+      <div class="glue" id="glueBox"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="card blue">
+      <span class="eyebrow" style="color:#E2ECFF"><svg class="ic"><use href="#i-trophy"/></svg> Финальный тест</span>
+      <h2 class="h2 split">6 вопросов. <span class="t2">Проверь, что осталось</span> в голове</h2>
+      <div class="quiz" id="qz"><canvas id="confetti"></canvas><div id="qBody"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHEAT ============ -->
+<section id="cheat">
+  <div class="wrap">
+    <div class="card soft">
+      <span class="eyebrow"><svg class="ic"><use href="#i-file-text"/></svg> Шпаргалка · сделай скрин</span>
+      <h2 class="h2 split">Всё на <span class="or">одном экране</span></h2>
+      <div class="cheat">
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-layers"/></svg></span><b>Простое</b><code>1 основа<br><em>I play.</em></code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-link"/></svg></span><b>Сложносочинённое</b><code>2 главные + <em>and / but / or / so</em></code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-git-branch"/></svg></span><b>Сложноподчинённое</b><code>главная + <em>because / when / if / that</em> + зависимая</code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-puzzle"/></svg></span><b>Смешанное</b><code>2+ главные + 1+ зависимая</code></div>
+        <div class="ch o rv"><span class="ci"><svg class="ic"><use href="#i-quote"/></svg></span><b>Повествование</b><code>S + V <em>.</em></code></div>
+        <div class="ch o rv"><span class="ci"><svg class="ic"><use href="#i-circle-help"/></svg></span><b>Вопрос</b><code><em>Do</em> + S + V <em>?</em></code></div>
+        <div class="ch o rv"><span class="ci"><svg class="ic"><use href="#i-zap"/></svg></span><b>Восклицание</b><code><em>What a</em> … / <em>How</em> … <em>!</em></code></div>
+        <div class="ch o rv"><span class="ci"><svg class="ic"><use href="#i-hand"/></svg></span><b>Побуждение</b><code>V … <em>(please)</em></code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-repeat"/></svg></span><b>If 0</b><code>Present + <em>Present</em></code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-target"/></svg></span><b>If I</b><code>Present + <em>will</em> V</code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-sparkles"/></svg></span><b>If II</b><code>Past + <em>would</em> V</code></div>
+        <div class="ch rv"><span class="ci"><svg class="ic"><use href="#i-rotate-ccw"/></svg></span><b>If III</b><code>Past Perfect + <em>would have</em> V3</code></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="card white">
+      <span class="eyebrow"><svg class="ic"><use href="#i-circle-help"/></svg> Частые вопросы</span>
+      <h2 class="h2 split">То, что <span class="t2">спрашивают</span> <span class="or">чаще всего</span></h2>
+      <div class="faq">
+        <details><summary>Как быстро отличить сочинение от подчинения? <svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Убери союз и одну часть. Если обе части стоят сами по себе, это сочинение (and, but, or, so). Если одна часть без другой звучит оборванно («because it helps me»), это подчинение.</p></details>
+        <details><summary>Можно начинать предложение с And или But? <svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>В разговоре и в блогах да, так пишут постоянно. В академическом эссе лучше заменить на However или In addition.</p></details>
+        <details><summary>Нужна запятая перед because? <svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Обычно нет: I stayed home because it was raining. А вот если because-часть стоит первой, после неё ставят запятую: Because it was raining, I stayed home.</p></details>
+        <details><summary>Почему после if не ставят will? <svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>В условной части будущее передаётся настоящим временем: If it rains, we will stay home. Will остаётся только во второй, главной части.</p></details>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="outro">
+  <div class="wrap">
+    <div class="card soft">
+      <div class="thanks">
+        <div class="big">Спасибо<span>что дочитал</span></div>
+        <p class="lede">Сделай скрин шпаргалки. Через неделю вернись и пройди тест ещё раз. Если всё зелёное, тема твоя.</p>
+        <div class="likebox"><button id="likeBtn" aria-label="Нравится"><svg class="ic"><use href="#i-heart"/></svg></button><button id="saveBtn" aria-label="Сохранить"><svg class="ic"><use href="#i-bookmark"/></svg></button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer><div class="wrap"><b style="color:var(--ink)">Dias English</b><span>Гайд написан по мотивам открытых материалов о типах предложений и переписан своими словами. Видео принадлежат их авторам на YouTube.</span></div></footer>
+
+
+<div class="modal vsheet" id="vSheet" role="dialog" aria-modal="true" aria-labelledby="vT"><div class="box">
+  <button class="x" id="vX" aria-label="Закрыть"><svg class="ic"><use href="#i-x"/></svg></button>
+  <span class="eyebrow"><svg class="ic"><use href="#i-audio-lines"/></svg> Озвучка</span>
+  <h3 class="h3" id="vT" style="margin-top:10px">Выбери голос</h3>
+  <p class="small" style="margin:8px 0 0">Голоса берутся из твоего телефона или браузера. Выбор сохранится.</p>
+  <div class="vacc" id="vAcc" role="group" aria-label="Акцент"></div>
+  <div class="vlist" id="vList" role="radiogroup" aria-label="Голоса"></div>
+  <div class="vrate"><span class="small">Скорость</span><div class="vrb" id="vRate" role="group" aria-label="Скорость"><button data-r=".75">0.75×</button><button data-r=".9">0.9×</button><button data-r="1">1×</button><button data-r="1.15">1.15×</button></div></div>
+  <button class="btn bl" id="vTest" style="width:100%;margin-top:16px"><svg class="ic"><use href="#i-volume-2"/></svg> Проверить: «If I had more time, I would travel.»</button>
+</div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', xInit);
+function xInit(){
+  /* Ссылки: вставить сюда, когда будут готовы */
+  var LINKS = { lava: '', wa: '' };
+
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) document.documentElement.classList.add('reduce');
+  var G = (window.gsap && window.ScrollTrigger && !reduce) ? gsap : null;
+  if(G){ gsap.registerPlugin(ScrollTrigger); if(window.SplitText) gsap.registerPlugin(SplitText); if(window.MotionPathPlugin) gsap.registerPlugin(MotionPathPlugin); ScrollTrigger.config({ignoreMobileResize:true}); document.documentElement.classList.add('gs'); }
+
+  function whenVisible(el, on, off, th){
+    if(!el) return;
+    if(!('IntersectionObserver' in window)){ on(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ en.isIntersecting ? on() : (off && off()); }); }, {threshold:th||.25}).observe(el);
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  /* ---------- toast ---------- */
+  var toastT;
+  function toast(t){ var el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(function(){ el.classList.remove('on'); }, 2600); }
+
+  /* ---------- speech (en) ---------- */
+  var tts = 'speechSynthesis' in window, enVoice = null, voices = [], vRate = .9, vAcc = 'all';
+  var ACC = {US:'США', GB:'Британия', AU:'Австралия', IE:'Ирландия', IN:'Индия', CA:'Канада', NZ:'Новая Зеландия', ZA:'ЮАР', SG:'Сингапур'};
+  if(!tts) document.documentElement.classList.add('no-tts');
+  function store(k, v){ try{ if(v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
+  var savedRate = parseFloat(store('voiceRate')); if(savedRate) vRate = savedRate;
+  function accOf(v){ var m = /^en[-_]([A-Za-z]{2})/.exec(v.lang); return m ? m[1].toUpperCase() : 'XX'; }
+  function pickVoice(){
+    try{
+      var FUN = /^(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Deranged|Fred|Good News|Hysterical|Jester|Junior|Kathy|Organ|Pipe Organ|Ralph|Superstar|Trinoids|Whisper|Wobble|Zarvox|Grandma|Grandpa|Rocko|Sandy|Shelley|Flo|Eddy|Reed)\b/i;
+      voices = speechSynthesis.getVoices().filter(function(x){ return /^en/i.test(x.lang) && !FUN.test(x.name); });
+      voices.sort(function(a, b){ var q = function(v){ return /premium|enhanced|natural|google|neural/i.test(v.name) ? 0 : v.localService ? 1 : 2; }; return q(a) - q(b); });
+      var want = store('voiceURI');
+      enVoice = (want && voices.find(function(x){ return x.voiceURI === want; })) || voices.find(function(x){ return /^en(-|_)US/i.test(x.lang) && x.localService; }) || voices.find(function(x){ return /^en(-|_)(US|GB)/i.test(x.lang); }) || voices[0] || null;
+      if($('#vSheet').classList.contains('on')) drawVoices();
+    }catch(e){}
+  }
+  if(tts){ pickVoice(); try{ speechSynthesis.addEventListener ? speechSynthesis.addEventListener('voiceschanged', pickVoice) : (speechSynthesis.onvoiceschanged = pickVoice); }catch(e){} }
+  function drawVoices(){
+    var accs = []; voices.forEach(function(v){ var a = accOf(v); if(accs.indexOf(a) < 0) accs.push(a); });
+    accs.sort(function(a, b){ return (a === 'US' ? -2 : a === 'GB' ? -1 : 0) - (b === 'US' ? -2 : b === 'GB' ? -1 : 0); });
+    $('#vAcc').innerHTML = ['all'].concat(accs).map(function(a){ return '<button data-a="' + a + '" aria-pressed="' + (a === vAcc) + '">' + (a === 'all' ? 'Все' : (ACC[a] || a)) + '</button>'; }).join('');
+    var list = voices.filter(function(v){ return vAcc === 'all' || accOf(v) === vAcc; });
+    $('#vList').innerHTML = list.length ? list.map(function(v, i){ return '<button role="radio" data-u="' + esc(v.voiceURI) + '" aria-checked="' + (enVoice && v.voiceURI === enVoice.voiceURI) + '"><span class="rb"></span><span>' + esc(v.name.replace(/\s*\(.*\)\s*$/, '')) + '<small>' + (ACC[accOf(v)] || v.lang) + (v.localService ? '' : ' · онлайн') + '</small></span></button>'; }).join('') : '<p class="empty">Английских голосов на этом устройстве не нашлось. Попробуй другой браузер или добавь голос в настройках системы.</p>';
+    $$('#vRate button').forEach(function(b){ b.setAttribute('aria-pressed', String(Math.abs(+b.dataset.r - vRate) < .01)); });
+  }
+  (function(){
+    var sh = $('#vSheet'); if(!sh) return;
+    $('#vOpen').addEventListener('click', function(){ pickVoice(); drawVoices(); sh.classList.add('on'); });
+    $('#vX').addEventListener('click', function(){ sh.classList.remove('on'); });
+    sh.addEventListener('click', function(e){
+      if(e.target === sh){ sh.classList.remove('on'); return; }
+      var a = e.target.closest('#vAcc button'); if(a){ vAcc = a.dataset.a; drawVoices(); return; }
+      var v = e.target.closest('#vList button'); if(v){ enVoice = voices.find(function(x){ return x.voiceURI === v.dataset.u; }) || enVoice; store('voiceURI', v.dataset.u); drawVoices(); say('Hi! I am your new voice.'); return; }
+      var r = e.target.closest('#vRate button'); if(r){ vRate = +r.dataset.r; store('voiceRate', String(vRate)); drawVoices(); return; }
+    });
+    $('#vTest').addEventListener('click', function(){ say('If I had more time, I would travel.', $('#vTest')); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') sh.classList.remove('on'); });
+  })();
+  function say(text, btn){
+    if(!tts || !text) return;
+    try{
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text); u.lang = enVoice ? enVoice.lang : 'en-US'; u.rate = vRate; if(enVoice) u.voice = enVoice;
+      if(btn){ btn.classList.add('on'); u.onend = u.onerror = function(){ btn.classList.remove('on'); }; }
+      speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){ var b = e.target.closest('[data-say]'); if(b) say(b.dataset.say, b.classList.contains('say') ? b : null); });
+
+  /* ---------- progress + reveal ---------- */
+  var prog = $('#prog');
+  function onScroll(){
+    var h = document.documentElement, p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
+    prog.style.scale = Math.min(1, p) + ' 1';
+    dockCheck(p);
+  }
+  var revealIO = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); revealIO.unobserve(en.target); } }); }, {rootMargin:'0px 0px -8% 0px'}) : null;
+  $$('.rv').forEach(function(el){ revealIO ? revealIO.observe(el) : el.classList.add('in'); });
+
+  /* ---------- headings ---------- */
+  if(G && window.SplitText){
+    $$('.split').forEach(function(h){
+      var st = new SplitText(h, {type:'words', wordsClass:'wd'});
+      G.from(st.words, {yPercent:60, rotation:4, duration:.8, ease:'back.out(2)', stagger:.045, scrollTrigger:{trigger:h, start:'top 88%', once:true}});
+    });
+  }
+
+  /* ---------- hero cubes pop ---------- */
+  if(G){
+    G.from('.hero .scene .cube, .hero .scene .glass, .hero .scene .ring', {scale:.4, y:40, duration:1.1, ease:'elastic.out(1,.55)', stagger:.12, delay:.2});
+    G.from('.step .cube', {scale:.5, y:30, duration:.9, ease:'back.out(2.5)', stagger:.08, scrollTrigger:{trigger:'.steps', start:'top 80%', once:true}});
+  }
+
+  /* ---------- map plane ---------- */
+  (function(){
+    var path = $('#mapPath'), plane = $('#plane');
+    if(!path || !plane) return;
+    if(G && window.MotionPathPlugin){
+      G.set(plane, {xPercent:0, yPercent:0});
+      G.to(plane, {motionPath:{path:path, align:path, autoRotate:false, alignOrigin:[.5,.5]}, ease:'none', scrollTrigger:{trigger:'#map', start:'top 85%', end:'bottom 35%', scrub:1}});
+      G.fromTo(path, {strokeDashoffset:120}, {strokeDashoffset:0, repeat:-1, ease:'none', duration:3});
+    } else {
+      plane.setAttribute('transform', 'translate(430 70)');
+    }
+  })();
+
+  /* ---------- route lines ---------- */
+  if(G){ $$('#routeNav a').forEach(function(a){ var id = a.getAttribute('href'), t = $(id), bar = $('.rline i', a); if(!t) return; G.to(bar, {scale:1, ease:'none', scrollTrigger:{trigger:t, start:'top 70%', end:'bottom 30%', scrub:true}}); }); }
+
+  /* ---------- counters ---------- */
+  $$('.count').forEach(function(el){
+    var to = +el.dataset.to;
+    whenVisible(el, function(){ if(el.dataset.done) return; el.dataset.done = 1; if(!G){ el.textContent = to; return; } var o = {v:0}; G.to(o, {v:to, duration:1.2, ease:'power2.out', onUpdate:function(){ el.textContent = Math.round(o.v); }}); }, null, .5);
+  });
+
+  /* ---------- structure builder ---------- */
+  var ST = [
+    {show:['m1'], en:'I play Dota.', ru:'Я играю в Dota.', f:'<span class="m">кто + действие</span>', rule:'Одна основа. Никакого клея. Самый частый тип в чате.', html:'I play Dota.'},
+    {show:['m1','c1','m2'], en:'I play Dota, and I read every patch note.', ru:'Я играю в Dota и читаю каждый патчноут.', f:'<span class="m">главная</span><i>+</i><span>and / but / or / so</span><i>+</i><span class="m">главная</span>', rule:'Две равные части. Каждую можно оторвать, и она будет жить сама.', html:'I play Dota, <mark>and</mark> I read every patch note.'},
+    {show:['m1','c2','d1'], en:'I play Dota because it helps me win.', ru:'Я играю в Dota, потому что это помогает мне побеждать.', f:'<span class="m">главная</span><i>+</i><span>because / when / if</span><i>+</i><span class="d">зависимая</span>', rule:'Зависимая часть без главной звучит оборванно: «because it helps me win…» и что?', html:'I play Dota <mark class="o">because</mark> it helps me win.'},
+    {show:['m1','c1','m2','c2','d1'], en:'I play Dota, and I read every patch note because it helps me win.', ru:'Я играю в Dota и читаю каждый патчноут, потому что это помогает побеждать.', f:'<span class="m">2+ главные</span><i>+</i><span class="d">1+ зависимая</span>', rule:'Сочинение и подчинение в одной фразе. Так говорят на B1+ и в эссе.', html:'I play Dota, <mark>and</mark> I read every patch note <mark class="o">because</mark> it helps me win.'}
+  ];
+  var stBtn = $('#stEx .say');
+  function setST(k){
+    var d = ST[k];
+    $$('#stTabs .tab').forEach(function(t){ t.setAttribute('aria-selected', String(+t.dataset.k === k)); });
+    $$('#blocks .blk').forEach(function(b){
+      var on = d.show.indexOf(b.dataset.b) > -1, was = !b.classList.contains('off');
+      b.classList.toggle('off', !on);
+      if(on && !was){ b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); }
+    });
+    $('#stEn').innerHTML = d.html; $('#stRu').textContent = d.ru; $('#stF').innerHTML = d.f; $('#stRule').textContent = d.rule;
+    stBtn.dataset.say = d.en;
+  }
+  $$('#stTabs .tab').forEach(function(t){ t.addEventListener('click', function(){ setST(+t.dataset.k); stTimerStop(); }); });
+  var stT = null, stK = 0;
+  function stTimerStop(){ clearInterval(stT); stT = null; stK = -1; }
+  setST(0);
+  if(!reduce) whenVisible($('#structure .stage'), function(){ if(stT || stK < 0) return; stT = setInterval(function(){ stK = (stK + 1) % 4; setST(stK); }, 3600); }, function(){ clearInterval(stT); stT = null; }, .5);
+
+  /* ---------- chat ---------- */
+  (function(){
+    var ms = $$('#dchat .msg'), t = null, i = 0;
+    if(reduce){ ms.forEach(function(m){ m.classList.add('in'); }); return; }
+    function tick(){ if(i < ms.length){ ms[i].classList.add('in'); i++; } else if(i >= ms.length + 4){ ms.forEach(function(m){ m.classList.remove('in'); }); i = 0; } else i++; }
+    whenVisible($('#dchat'), function(){ if(t) return; tick(); t = setInterval(tick, 900); }, function(){ clearInterval(t); t = null; }, .35);
+  })();
+
+  /* ---------- purpose morph ---------- */
+  var PM = [
+    {g:'.', k:'Повествовательное', ic:'quote', w:['You','read','books','.'], ru:'Ты читаешь книги. Просто факт.', s:'You read books.'},
+    {g:'?', k:'Вопросительное', ic:'circle-help', w:['Do','you','read','books','?'], ru:'Ты читаешь книги? Do вышел вперёд.', s:'Do you read books?'},
+    {g:'!', k:'Восклицательное', ic:'zap', w:['You','read','so','many','books','!'], ru:'Ты столько читаешь! Эмоция и восклицательный знак.', s:'You read so many books!'},
+    {g:'→', k:'Побудительное', ic:'hand', w:['Read','books',',','please','.'], ru:'Читай книги, пожалуйста. «Ты» спрятался.', s:'Read books, please.'}
+  ];
+  var mK = 0, mT = null;
+  function setPM(k, instant){
+    var d = PM[k], sent = $('#mSent');
+    $('#mGlyph').textContent = d.g;
+    $('#mKind').innerHTML = '<svg class="ic"><use href="#i-' + d.ic + '"/></svg> <span>' + d.k + '</span>';
+    $('#mRu').textContent = d.ru;
+    $$('#mDots button').forEach(function(b, i){ b.classList.toggle('on', i === k); });
+    $$('#pcards .pc').forEach(function(b){ b.classList.toggle('on', +b.dataset.k === k); });
+    var html = d.w.map(function(x){ var p = /^[.?!,]$/.test(x); return (p ? '' : ' ') + '<span class="w' + (p ? ' p' : '') + (instant ? '' : ' out') + '">' + esc(x) + '</span>'; }).join('').trim();
+    sent.innerHTML = html;
+    if(!instant){ $$('.w', sent).forEach(function(w, i){ setTimeout(function(){ w.classList.remove('out'); }, 40 + i * 70); }); }
+    sent.dataset.say = d.s;
+  }
+  setPM(0, true);
+  $('#mSent').classList.add('sayable');
+  $('#mSent').addEventListener('click', function(){ say(PM[mK].s); });
+  function pmGo(k){ mK = k; setPM(k); }
+  $$('#mDots button').forEach(function(b, i){ b.addEventListener('click', function(){ pmGo(i); clearInterval(mT); mT = 'stop'; }); });
+  $$('#pcards .pc').forEach(function(b){ b.addEventListener('click', function(){ pmGo(+b.dataset.k); say(PM[+b.dataset.k].s); clearInterval(mT); mT = 'stop'; }); });
+  if(!reduce) whenVisible($('#morph'), function(){ if(mT) return; mT = setInterval(function(){ pmGo((mK + 1) % 4); }, 2800); }, function(){ if(mT !== 'stop'){ clearInterval(mT); mT = null; } }, .5);
+
+  /* ---------- conditionals ---------- */
+  var CD = [
+    {en:'If you heat ice, it melts.', ru:'Если нагреть лёд, он тает. Всегда.', f:'<span class="m">If + Present</span><i>,</i><span>Present</span>', rule:'Нулевой тип: законы природы и привычки. Это правда всегда, без исключений.', m:100},
+    {en:'If I pass the exam, I will study in Rome.', ru:'Если сдам экзамен, буду учиться в Риме.', f:'<span class="m">If + Present</span><i>,</i><span class="d">will + V</span>', rule:'Первый тип: реальный план. После if никакого will, он живёт только во второй части.', m:70},
+    {en:'If I had more time, I would play Dota every day.', ru:'Если бы у меня было больше времени, я бы играл в Dota каждый день.', f:'<span class="m">If + Past</span><i>,</i><span class="d">would + V</span>', rule:'Второй тип: фантазия о настоящем. Past тут не про прошлое, а про «далеко от реальности». If I were you тоже отсюда.', m:35},
+    {en:"If I hadn't played Dota, I wouldn't have learned English so fast.", ru:'Если бы я не играл в Dota, я бы не выучил английский так быстро.', f:'<span class="m">If + Past Perfect</span><i>,</i><span class="d">would have + V3</span>', rule:'Третий тип: о прошлом, которое уже не изменить. Сожаление или, как у меня, благодарность.', m:6}
+  ];
+  function setCD(k){
+    var d = CD[k];
+    $$('#lv button').forEach(function(b){ b.setAttribute('aria-pressed', String(+b.dataset.k === k)); });
+    $$('#pillars .pil').forEach(function(p, i){ p.classList.toggle('on', i === k); });
+    $('#cEn').textContent = d.en; $('#cRu').textContent = d.ru; $('#cF').innerHTML = d.f; $('#cRule').textContent = d.rule; $('#cSay').dataset.say = d.en;
+    $('#cMeter').style.width = d.m + '%';
+    if(G){ var p = $$('#pillars .pil')[k]; G.fromTo(p, {scaleY:.85}, {scaleY:1, transformOrigin:'50% 100%', duration:.7, ease:'elastic.out(1,.45)'}); }
+  }
+  $$('#lv button').forEach(function(b){ b.addEventListener('click', function(){ setCD(+b.dataset.k); }); });
+  $$('#pillars .pil').forEach(function(p, i){ p.style.cursor = 'pointer'; p.addEventListener('click', function(){ setCD(i); }); });
+  setCD(0);
+  if(G){ G.from('#pillars .pil', {height:0, duration:1.1, ease:'back.out(1.6)', stagger:.1, scrollTrigger:{trigger:'#pillars', start:'top 85%', once:true}}); }
+
+  /* ---------- youtube facade ---------- */
+  $$('.yt').forEach(function(y){
+    $('button', y).addEventListener('click', function(){
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + y.dataset.id + '?autoplay=1&rel=0';
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+      f.allowFullscreen = true; f.title = 'YouTube video';
+      y.innerHTML = ''; y.appendChild(f);
+    });
+  });
+
+  /* ---------- sorter ---------- */
+  var TYPES = ['простое', 'сложносочинённое', 'сложноподчинённое', 'смешанное'];
+  var SQ = [
+    {s:'We won the match.', a:0, w:'Одна основа: we won.'},
+    {s:'I was tired, but I played one more game.', a:1, w:'Две равные части, клей but.'},
+    {s:'When the teacher speaks Italian, I understand almost everything.', a:2, w:'When-часть зависит от главной.'},
+    {s:'My friends live in Rome, and they say that the city never sleeps.', a:3, w:'and склеивает две главные, that добавляет зависимую.'},
+    {s:'Read the patch notes before the game.', a:0, w:'Одна основа, просто побудительная. Подлежащее «you» спрятано.'},
+    {s:'You can take the bus, or we can walk to the stadium.', a:1, w:'or склеивает две равные части.'},
+    {s:'I learned English because I wanted to understand the game.', a:2, w:'because-часть не живёт без главной.'},
+    {s:'I failed the first test, so I changed my method, and now I pass every exam that I take.', a:3, w:'so и and дают сочинение, that I take даёт подчинение.'}
+  ];
+  var sI = 0, sScore = 0, sRes = [];
+  var sDots = $('#sDots'); sDots.innerHTML = SQ.map(function(){ return '<i></i>'; }).join(''); $('#sTot').textContent = SQ.length;
+  function drawS(){
+    var q = SQ[sI];
+    if(!q){ $('#sQ').textContent = 'Готово: ' + sScore + ' из ' + SQ.length + '. ' + (sScore >= 6 ? 'Сильно! Тема твоя.' : 'Пролистай конструктор ещё раз и попробуй снова.'); $('#sOpts').hidden = true; $('#sFb').innerHTML = ''; $('#sNext').hidden = false; $('#sNext').firstChild.textContent = 'Ещё раз '; $('#sSay').hidden = true; return; }
+    $('#sSay').hidden = false; $('#sSay').dataset.say = q.s;
+    $('#sQ').textContent = q.s; $('#sOpts').hidden = false; $('#sFb').innerHTML = ''; $('#sNext').hidden = true;
+    $$('#sOpts .opt').forEach(function(o){ o.disabled = false; o.className = 'opt'; });
+  }
+  $$('#sOpts .opt').forEach(function(o){ o.addEventListener('click', function(){
+    var q = SQ[sI], k = +o.dataset.k, ok = k === q.a;
+    $$('#sOpts .opt').forEach(function(x){ x.disabled = true; if(+x.dataset.k === q.a) x.classList.add('ok'); });
+    if(!ok) o.classList.add('bad'); else sScore++;
+    $('#sScore').textContent = sScore;
+    sDots.children[sI].className = ok ? 'ok' : 'bad';
+    $('#sFb').innerHTML = (ok ? '<b>Верно.</b> ' : '<b>Это ' + TYPES[q.a] + '.</b> ') + esc(q.w);
+    $('#sNext').hidden = false; $('#sNext').firstChild.textContent = 'Дальше ';
+    if(G) G.fromTo(o, {scale:.92}, {scale:1, duration:.5, ease:'elastic.out(1.2,.4)'});
+  }); });
+  $('#sNext').addEventListener('click', function(){
+    if(sI >= SQ.length){ sI = 0; sScore = 0; $('#sScore').textContent = 0; $$('i', sDots).forEach(function(d){ d.className = ''; }); } else sI++;
+    drawS();
+  });
+  drawS();
+
+  /* ---------- glue ---------- */
+  var GL = [
+    {a:'I wanted to win,', b:'I practised every evening.', ok:'so', opts:['so','but','because'], ru:'Я хотел победить, поэтому тренировался каждый вечер.', why:'so = поэтому. Результат первой части. Тип: сложносочинённое.'},
+    {a:'I stayed home', b:'it was raining.', ok:'because', opts:['and','because','or'], ru:'Я остался дома, потому что шёл дождь.', why:'because объясняет причину и делает вторую часть зависимой. Тип: сложноподчинённое.'},
+    {a:'Italian is beautiful,', b:'the grammar is not easy.', ok:'but', opts:['so','because','but'], ru:'Итальянский красивый, но грамматика непростая.', why:'but = но, противопоставление двух равных частей. Тип: сложносочинённое.'},
+    {a:'I will call you', b:'I land in Rome.', ok:'when', opts:['when','but','so'], ru:'Я позвоню тебе, когда приземлюсь в Риме.', why:'when + Present даже про будущее, как и после if. Тип: сложноподчинённое.'}
+  ];
+  $('#glueBox').innerHTML = GL.map(function(g, i){
+    return '<div class="gl-card rv" data-i="' + i + '"><div class="parts"><span>' + esc(g.a) + '</span><span class="slot">?</span><span>' + esc(g.b) + '</span></div><p class="ru">' + esc(g.ru) + '</p><div class="cjs">' + g.opts.map(function(o){ return '<button data-o="' + o + '">' + o + '</button>'; }).join('') + '</div><p class="why"></p></div>';
+  }).join('');
+  $$('#glueBox .gl-card').forEach(function(c){
+    var g = GL[+c.dataset.i], slot = $('.slot', c);
+    revealIO ? revealIO.observe(c) : c.classList.add('in');
+    $$('.cjs button', c).forEach(function(b){ b.addEventListener('click', function(){
+      var o = b.dataset.o, ok = o === g.ok;
+      slot.textContent = o; slot.className = 'slot ' + (ok ? 'ok' : 'bad');
+      $('.why', c).textContent = ok ? g.why : 'Не то. Подумай: ' + (g.ok === 'because' ? 'это причина?' : g.ok === 'so' ? 'это следствие?' : g.ok === 'but' ? 'это противопоставление?' : 'это время?');
+      if(ok){ say(g.a.replace(/,$/, '') + (g.a.slice(-1) === ',' ? ', ' : ' ') + o + ' ' + g.b); }
+      if(G) G.fromTo(slot, {scale:.7, rotation:-6}, {scale:1, rotation:0, duration:.6, ease:'elastic.out(1.1,.45)'});
+    }); });
+  });
+
+  /* ---------- quiz ---------- */
+  var Q = [
+    {q:'Какой тип: «I like football, and my brother likes Dota.»', a:['Простое','Сложносочинённое','Сложноподчинённое'], c:1, x:'Две равные части, клей and.'},
+    {q:'Найди сложноподчинённое предложение.', a:['She called, but I was asleep.','I was asleep when she called.','Call me tomorrow.'], c:1, x:'when she called зависит от главной части.'},
+    {q:'Какой это тип по цели: «Close the door, please.»', a:['Повествовательное','Восклицательное','Побудительное'], c:2, x:'Просьба. Подлежащее «you» подразумевается.'},
+    {q:'Выбери правильный вариант: «If it ___ tomorrow, we will stay home.»', a:['will rain','rains','rained'], c:1, x:'После if в первом типе Present, will только во второй части.'},
+    {q:'«If I were rich, I would buy a house in Rome.» Какой тип if?', a:['Первый','Второй','Третий'], c:1, x:'Past + would: фантазия о настоящем.'},
+    {q:'Как правильно сказать «Если бы я знал тогда, я бы пришёл»?', a:['If I knew, I would come.','If I had known, I would have come.','If I know, I will come.'], c:1, x:'Прошлое, которое не изменить: Past Perfect + would have + V3.'}
+  ];
+  var qi = 0, qs = 0, qBody = $('#qBody');
+  function drawQ(){
+    var d = Q[qi];
+    qBody.innerHTML = '<div class="qn">Вопрос ' + (qi + 1) + ' из ' + Q.length + '</div><div class="qq">' + esc(d.q) + '</div><div class="qa">' + d.a.map(function(t, i){ return '<button data-i="' + i + '">' + esc(t) + '</button>'; }).join('') + '</div><p class="qx"></p>';
+    $$('.qa button', qBody).forEach(function(b){ b.addEventListener('click', function(){ answer(+b.dataset.i); }); });
+  }
+  function answer(i){
+    var d = Q[qi], bs = $$('.qa button', qBody);
+    if(bs[0].disabled) return;
+    bs.forEach(function(b, j){ b.disabled = true; if(j === d.c) b.classList.add('ok'); });
+    if(i === d.c) qs++; else bs[i].classList.add('bad');
+    $('.qx', qBody).innerHTML = (i === d.c ? '<b>Верно.</b> ' : '<b>Не совсем.</b> ') + esc(d.x);
+    var nb = document.createElement('button'); nb.className = 'btn bl'; nb.style.marginTop = '14px';
+    nb.innerHTML = qi < Q.length - 1 ? 'Следующий <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-trophy"/></svg>';
+    nb.addEventListener('click', function(){ qi++; qi < Q.length ? drawQ() : done(); });
+    qBody.appendChild(nb);
+  }
+  function done(){
+    var msg = qs === 6 ? 'Идеально. Можешь объяснять это друзьям.' : qs >= 4 ? 'Хорошо. Повтори лестницу if, и будет 6 из 6.' : 'Нормально для первого раза. Пройди конструктор и попробуй ещё.';
+    qBody.innerHTML = '<div class="res"><div class="big">' + qs + '/6</div><p class="lede" style="margin:12px auto 0">' + msg + '</p><div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px"><button class="btn line" id="qAgain"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Ещё раз</button></div></div>';
+    $('#qAgain').addEventListener('click', function(){ qi = 0; qs = 0; drawQ(); });
+    if(qs >= 4) confetti();
+  }
+  function confetti(){
+    if(reduce) return;
+    var c = $('#confetti'), x = c.getContext('2d'), w = c.width = c.offsetWidth, h = c.height = c.offsetHeight, ps = [], cols = ['#FFA01C','#4F8FF7','#22C38E','#FFD58E','#A9CBFF'];
+    for(var i = 0; i < 120; i++) ps.push({x:w/2, y:h*.35, vx:(Math.random()-.5)*12, vy:Math.random()*-11-3, r:Math.random()*6+3, c:cols[i%5], a:Math.random()*6});
+    var n = 0;
+    (function f(){ x.clearRect(0,0,w,h); ps.forEach(function(p){ p.x += p.vx; p.y += p.vy; p.vy += .35; p.a += .2; x.save(); x.translate(p.x,p.y); x.rotate(p.a); x.fillStyle = p.c; x.fillRect(-p.r/2,-p.r/4,p.r,p.r/2); x.restore(); }); if(++n < 140) requestAnimationFrame(f); else x.clearRect(0,0,w,h); })();
+  }
+  drawQ();
+
+  /* ---------- links (lava / whatsapp) ---------- */
+  $$('[data-link]').forEach(function(a){
+    var url = LINKS[a.dataset.link];
+    if(url){ a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
+    else a.addEventListener('click', function(e){
+      e.preventDefault();
+      var m = $('#exit'); if(m) m.classList.remove('on');
+      var t = $('#levels'); if(t && a.closest('#levels') === null) t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth'});
+      toast('Ссылка на ' + (a.dataset.link === 'wa' ? 'WhatsApp' : 'оплату') + (a.dataset.lvl ? ' (' + a.dataset.lvl + ')' : '') + ' появится здесь совсем скоро');
+    });
+  });
+
+  /* ---------- ad: opt-in, dock, exit intent, video ---------- */
+  var dock = $('#dock');
+  function dockCheck(p){ if(!dock) return; var lv = $('#final'); var r = lv ? lv.getBoundingClientRect() : null; dock.classList.toggle('on', p > .3 && !(r && r.top < innerHeight && r.bottom > 0)); }
+  var optNo = $('#optNo');
+  if(optNo){
+    optNo.addEventListener('click', function(){ $('#optMsg').textContent = 'Окей, уважаю. Тогда хотя бы сохрани шпаргалку выше. А гайды никуда не денутся.'; });
+    $('#optYes').addEventListener('click', function(){ $('#optMsg').textContent = ''; });
+  }
+  var exitM = $('#exit');
+  if(exitM){
+    var shown = false;
+    try{ shown = sessionStorage.getItem('exitShown') === '1'; }catch(e){}
+    var openExit = function(){ if(shown) return; shown = true; try{ sessionStorage.setItem('exitShown','1'); }catch(e){} exitM.classList.add('on'); };
+    var deep = false, lastY = scrollY, upAcc = 0, upT = 0, t0 = Date.now(), navT = 0;
+    document.addEventListener('click', function(e){ if(e.target.closest('a[href^="#"]')) navT = Date.now(); });
+    window.addEventListener('scroll', function(){
+      var y = scrollY, h = document.documentElement.scrollHeight - innerHeight, now = Date.now();
+      if(y / h > .55) deep = true;
+      if(y < lastY){ if(now - upT > 700) upAcc = 0; if(!upAcc) upT = now; upAcc += lastY - y; } else upAcc = 0;
+      if(deep && upAcc > 1400 && now - upT < 700 && now - t0 > 40000 && now - navT > 2000 && matchMedia('(max-width:899px)').matches) openExit();
+      lastY = y;
+    }, {passive:true});
+    document.addEventListener('mouseout', function(e){ if(!e.relatedTarget && e.clientY < 8 && deep && Date.now() - t0 > 20000) openExit(); });
+    $('#exitX').addEventListener('click', function(){ exitM.classList.remove('on'); });
+    exitM.addEventListener('click', function(e){ if(e.target === exitM) exitM.classList.remove('on'); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') exitM.classList.remove('on'); });
+  }
+  var tv = $('#tourVid');
+  if(tv){
+    if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting && !tv.poster) tv.poster = tv.dataset.poster; }); }, {rootMargin:'900px 0px'}).observe(tv); } else tv.poster = tv.dataset.poster;
+    whenVisible(tv, function(){ if(!reduce){ var p = tv.play(); if(p && p.catch) p.catch(function(){}); } }, function(){ tv.pause(); }, .35);
+  }
+  if(G && $('#gal')){ G.from('#gal .shot', {y:40, rotation:2, duration:.8, ease:'back.out(1.8)', stagger:.08, scrollTrigger:{trigger:'#gal', start:'top 85%', once:true}}); }
+
+  /* ---------- outro (no-ad) ---------- */
+  ['likeBtn','saveBtn'].forEach(function(id){
+    var b = $('#' + id); if(!b) return;
+    var on = false; try{ on = localStorage.getItem(id) === '1'; }catch(e){}
+    b.classList.toggle('on', on);
+    b.addEventListener('click', function(){ on = !on; b.classList.toggle('on', on); try{ localStorage.setItem(id, on ? '1' : '0'); }catch(e){} if(G) G.fromTo(b, {scale:.8}, {scale:1, duration:.6, ease:'elastic.out(1.2,.4)'}); if(on) toast(id === 'likeBtn' ? 'Спасибо! Это мотивирует писать дальше' : 'Сохрани ссылку в закладки браузера: Ctrl/Cmd + D'); });
+  });
+
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  if(G){ window.addEventListener('load', function(){ ScrollTrigger.refresh(); }); if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); }); }
+}
+</script>
+
+</body>
+</html>
