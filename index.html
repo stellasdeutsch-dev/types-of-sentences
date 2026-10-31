@@ -459,10 +459,37 @@ html.no-tts .say{display:none}
 footer{padding:28px 0 110px;color:var(--mute);font-size:13px}
 footer .wrap{display:flex;flex-direction:column;gap:8px}
 
+/* ---------- marquee ---------- */
+.mq{padding:6px 0}
+.mq .card{padding:22px 0 18px;overflow:hidden}
+.mq-track{display:flex;width:max-content;gap:.35em;font-size:clamp(68px,19vw,190px);font-weight:600;letter-spacing:-.05em;line-height:.95;white-space:nowrap;will-change:transform;animation:mq 30s linear infinite}
+html.gs .mq-track{animation:none}
+.mq-track span{display:inline-flex;align-items:center;gap:.35em}
+.mq-track .o{color:#FFD58E}
+.mq-track .dot{width:.22em;height:.22em;border-radius:50%;background:rgba(255,255,255,.55);display:inline-block}
+.mq .corner{position:absolute;right:20px;top:14px;font-size:15px;font-weight:600;line-height:1.05;text-align:right;color:#E2ECFF;z-index:2}
+.mq .card.navy .mq-track .o{color:var(--or)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* ---------- typer ---------- */
+.typer{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:12px 18px;border-radius:16px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);font-size:clamp(17px,4.6vw,22px);font-weight:600;min-height:52px;max-width:100%}
+.typer .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--or);font-weight:700}
+.typer .caret{width:2px;height:1.1em;background:var(--or);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+/* ---------- time clock ---------- */
+.tclock{display:flex;align-items:center;gap:14px;margin-top:14px;padding:12px 14px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.tclock svg{width:62px;height:62px;flex:none}
+.tclock b{display:block;font-weight:600;font-size:15px}
+.tclock span{font-size:13px;color:var(--mute)}
+/* ---------- glue pulse ---------- */
+.blk.cj::after{content:"";position:absolute;inset:-4px;border-radius:inherit;box-shadow:0 0 0 0 rgba(255,160,28,.55);animation:glue 2.2s ease-out infinite}
+.blk.cj:not(.or)::after{box-shadow:0 0 0 0 rgba(27,33,49,.35)}
+@keyframes glue{0%{box-shadow:0 0 0 0 rgba(255,160,28,.5)}100%{box-shadow:0 0 0 14px rgba(255,160,28,0)}}
+.deco{z-index:0}
+.tilt{transform-style:preserve-3d}
 /* ---------- reveal ---------- */
 .rv{translate:0 26px;transition:translate .8s cubic-bezier(.2,.8,.2,1)}
 .rv.in{translate:0 0}
-@media (prefers-reduced-motion:reduce){.rv{translate:none;transition:none}.floaty{animation:none}html{scroll-behavior:auto}.msg{opacity:1;translate:0 0}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}.typer .caret,.blk.cj::after{animation:none}.rv{translate:none;transition:none}.floaty{animation:none}html{scroll-behavior:auto}.msg{opacity:1;translate:0 0}}
 
 /* ---------- desktop ---------- */
 @media (min-width:760px){
@@ -610,6 +637,7 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
         <a class="btn big ghost" href="#platform">Ещё 20+ тем в Notion</a>
         
       </div>
+      <div><div class="typer" aria-live="off"><span class="k" id="twK">simple</span><span id="tw">I play football.</span><i class="caret"></i></div></div>
       <div class="meta"><span class="chip"><svg class="ic"><use href="#i-layers"/></svg> 4 по структуре</span><span class="chip"><svg class="ic"><use href="#i-message-circle"/></svg> 4 по цели</span><span class="chip"><svg class="ic"><use href="#i-git-branch"/></svg> 4 вида if</span></div>
       <div class="scene" aria-hidden="true">
         <div class="ring floaty d2"></div>
@@ -664,10 +692,16 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
   </div>
 </section>
 
+<section class="mq" aria-hidden="true">
+  <div class="wrap"><div class="card blue"><div class="glass deco floaty" style="width:60px;height:170px;left:12%;top:-60px;rotate:-30deg"></div><div class="corner">4 // 4<br>типа</div>
+    <div class="mq-track" data-dir="1"><span>Simple<i class="dot"></i></span><span class="o">Compound<i class="dot"></i></span><span>Complex<i class="dot"></i></span><span class="o">Mixed<i class="dot"></i></span><span>Simple<i class="dot"></i></span><span class="o">Compound<i class="dot"></i></span><span>Complex<i class="dot"></i></span><span class="o">Mixed<i class="dot"></i></span></div>
+  </div></div>
+</section>
+
 <!-- ============ STATS ============ -->
 <section id="stats">
   <div class="wrap">
-    <div class="card navy">
+    <div class="card navy"><div class="ring deco floaty d2" style="width:150px;height:150px;right:-50px;top:-50px;border-width:20px" aria-hidden="true"></div>
       <h2 class="h2 split">Одна тема. <span class="or">Четыре</span> <span class="t2">способа посмотреть на фразу</span></h2>
       <div class="stats">
         <div class="stat rv"><span class="num"><span class="count" data-to="4">4</span></span><p><b>типа по структуре</b> · сколько основ и как они склеены</p></div>
@@ -718,7 +752,7 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
 <section id="chat">
   <div class="wrap">
     <div class="card navy">
-      <span class="eyebrow"><svg class="ic"><use href="#i-message-circle"/></svg> Бонус-уровень</span>
+      <div class="glass deco floaty d3" style="width:54px;height:150px;right:-12px;top:-36px;rotate:24deg" aria-hidden="true"></div><span class="eyebrow"><svg class="ic"><use href="#i-message-circle"/></svg> Бонус-уровень</span>
       <h2 class="h2 split">А это что за типы? <span class="t2">Фразы, которые</span> <span class="or">ломают правила</span></h2>
       <p class="lede">В чатах никто не пишет полными предложениями. «Nice», «see you», «need help?». Без кого-то или без глагола. Это <b>неполные</b> и <b>односоставные</b> предложения. В живой речи их полно, и это нормально.</p>
       <div class="chat" id="dchat">
@@ -785,6 +819,7 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
           <div class="formula" id="cF"></div>
           <p class="rule"><svg class="ic"><use href="#i-lightbulb"/></svg><span id="cRule"></span></p>
           <div class="meter"><span>реальность</span><span class="bar"><i id="cMeter"></i></span></div>
+          <div class="tclock"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#F3F5F8" stroke="#E2E7EF" stroke-width="2"/><g stroke="#B5C0D6" stroke-width="2" stroke-linecap="round"><line x1="32" y1="7" x2="32" y2="12"/><line x1="57" y1="32" x2="52" y2="32"/><line x1="32" y1="57" x2="32" y2="52"/><line x1="7" y1="32" x2="12" y2="32"/></g><line id="cHand" x1="32" y1="32" x2="32" y2="13" stroke="#FFA01C" stroke-width="4" stroke-linecap="round" style="transform-origin:32px 32px;transition:rotate .8s cubic-bezier(.3,1.4,.5,1)"/><circle cx="32" cy="32" r="4" fill="#1B2131"/></svg><div><b id="cTime">Всегда</b><span id="cTimeS">глагол в настоящем, правда без срока</span></div></div>
         </div>
       </div>
     </div>
@@ -845,7 +880,7 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
 <section id="quiz">
   <div class="wrap">
     <div class="card blue">
-      <span class="eyebrow" style="color:#E2ECFF"><svg class="ic"><use href="#i-trophy"/></svg> Финальный тест</span>
+      <div class="glass deco floaty" style="width:56px;height:160px;right:-14px;top:-40px;rotate:28deg" aria-hidden="true"></div><div class="ring deco floaty d3" style="width:110px;height:110px;left:-40px;bottom:-40px;border-width:16px" aria-hidden="true"></div><span class="eyebrow" style="color:#E2ECFF"><svg class="ic"><use href="#i-trophy"/></svg> Финальный тест</span>
       <h2 class="h2 split">6 вопросов. <span class="t2">Проверь, что осталось</span> в голове</h2>
       <div class="quiz" id="qz"><canvas id="confetti"></canvas><div id="qBody"></div></div>
     </div>
@@ -933,6 +968,12 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
   </div>
 </section>
 
+<section class="mq" aria-hidden="true">
+  <div class="wrap"><div class="card navy"><div class="corner" style="color:#C9D3E5">6 // 6<br>уровней</div>
+    <div class="mq-track" data-dir="-1"><span>A0<i class="dot"></i></span><span class="o">A1<i class="dot"></i></span><span>A2<i class="dot"></i></span><span class="o">B1<i class="dot"></i></span><span>B2<i class="dot"></i></span><span class="o">C1<i class="dot"></i></span><span>A0<i class="dot"></i></span><span class="o">A1<i class="dot"></i></span><span>A2<i class="dot"></i></span><span class="o">B1<i class="dot"></i></span><span>B2<i class="dot"></i></span><span class="o">C1<i class="dot"></i></span></div>
+  </div></div>
+</section>
+
 <section id="levels">
   <div class="wrap">
     <div class="card soft">
@@ -954,6 +995,22 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
         <div class="rd rv"><span class="w">4</span><b>месяца до A2</b><span>по дорожной карте, если стартуешь с A1</span></div>
         <div class="rd rv"><span class="w">+6</span><b>месяцев до B1</b><span>всего около 40 недель</span></div>
         <div class="rd o rv"><span class="w">60</span><b>минут в день</b><span>5 дней учёбы, 1 практики, 1 отдыха</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="steps3">
+  <div class="wrap">
+    <div class="card navy">
+      <h2 class="h2 split" style="text-align:center">Начни учиться <span class="or">в 3 шага</span></h2>
+      <div class="steps" id="st3">
+        <div class="step"><span class="no">01</span><div><h4><em>Выбери уровень</em> A0–A1, A2–B1 или B2–C1.</h4><p>Не уверен? Напиши в WhatsApp, подскажу.</p></div>
+          <div class="cubes" aria-hidden="true"><div class="cube b ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-target"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>01</span></div></div></div></div></div>
+        <div class="step"><span class="no">02</span><div><h4><em>Оплати</em> на странице lava.top.</h4><p>Кнопка «Хочу» у каждого уровня ведёт прямо туда.</p></div>
+          <div class="cubes" aria-hidden="true"><div class="cube o ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-key"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>02</span></div></div></div></div></div>
+        <div class="step"><span class="no">03</span><div><h4><em>Открой Notion</em> и иди по дорожной карте.</h4><p>Тема в день. Гайд, видео, упражнения, Gemini.</p></div>
+          <div class="cubes" aria-hidden="true"><div class="cube n ka"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><svg class="ic"><use href="#i-rocket"/></svg></div></div></div><div class="cube w kb"><div class="rot"><div class="fc fr"></div><div class="fc rt"></div><div class="fc tp"><span>03</span></div></div></div></div></div>
       </div>
     </div>
   </div>
@@ -1116,6 +1173,56 @@ function xInit(){
     G.from('.hero .scene .cube, .hero .scene .glass, .hero .scene .ring', {scale:.4, y:40, duration:1.1, ease:'elastic.out(1,.55)', stagger:.12, delay:.2});
   }
 
+  /* ---------- hero typer ---------- */
+  (function(){
+    var TW = [['simple','I play football.'],['compound','I play football, and I watch every match.'],['complex','I play football because it helps me relax.'],['question','Do you play football?'],['if II','If I had time, I would travel.']];
+    var el = $('#tw'), kk = $('#twK'), i = 0, timer = null;
+    if(!el) return;
+    if(reduce) return;
+    function type(str, cb){ var n = 0; el.textContent = ''; (function t(){ el.textContent = str.slice(0, ++n); if(n < str.length) timer = setTimeout(t, 38); else timer = setTimeout(cb, 1700); })(); }
+    function erase(cb){ var str = el.textContent; (function e(){ str = str.slice(0, -2); el.textContent = str; if(str.length) timer = setTimeout(e, 18); else cb(); })(); }
+    function loop(){ erase(function(){ i = (i + 1) % TW.length; kk.textContent = TW[i][0]; type(TW[i][1], loop); }); }
+    var running = false;
+    whenVisible($('.typer'), function(){ if(running) return; running = true; timer = setTimeout(loop, 1500); }, function(){ running = false; clearTimeout(timer); }, .5);
+  })();
+
+  /* ---------- marquees ---------- */
+  $$('.mq-track').forEach(function(tr){
+    if(!G) return;
+    var dir = +tr.dataset.dir || 1;
+    var tw = G.fromTo(tr, {xPercent: dir > 0 ? 0 : -50}, {xPercent: dir > 0 ? -50 : 0, repeat:-1, ease:'none', duration:28, paused:true});
+    var card = tr.closest('.card');
+    ScrollTrigger.create({trigger:card, start:'top bottom', end:'bottom top', onToggle:function(st){ st.isActive ? tw.play() : tw.pause(); },
+      onUpdate:function(st){ var v = Math.max(-1, Math.min(1, st.getVelocity() / 3000)); tw.timeScale(1 + Math.abs(v) * 3); G.to(card, {skewY: v * 1.2, duration:.4, overwrite:'auto'}); }});
+  });
+
+  /* ---------- cards reveal + parallax ---------- */
+  if(G){
+    ScrollTrigger.batch('section:not(.hero) > .wrap > .card', {start:'top 92%', once:true, onEnter:function(b){ G.fromTo(b, {y:70, scale:.96}, {y:0, scale:1, duration:1, ease:'power3.out', stagger:.08, overwrite:'auto'}); }});
+    $$('.card .deco, .card > .glass, .card > .ring').forEach(function(d){ G.to(d, {yPercent:-45, rotation:'+=18', ease:'none', scrollTrigger:{trigger:d.closest('.card'), start:'top bottom', end:'bottom top', scrub:true}}); });
+    var scene = $('.hero .scene');
+    if(scene){
+      G.to(scene, {y:-70, ease:'none', scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}});
+      if(matchMedia('(hover:hover)').matches){
+        var qx = G.quickTo(scene, 'x', {duration:.8, ease:'power3'}), qr = G.quickTo(scene, 'rotationY', {duration:.8, ease:'power3'});
+        $('.hero .card').addEventListener('pointermove', function(e){ var r = this.getBoundingClientRect(), k = (e.clientX - r.left) / r.width - .5; qx(k * 40); qr(k * 10); });
+      }
+    }
+    $$('.keys li .ic').forEach(function(ic){ G.from(ic, {scale:.3, rotation:-30, duration:.8, ease:'back.out(3)', scrollTrigger:{trigger:ic, start:'top 90%', once:true}}); });
+    G.from('#st3 .cube', {y:80, scale:.5, duration:1, ease:'back.out(2.2)', stagger:.12, scrollTrigger:{trigger:'#st3', start:'top 80%', once:true}});
+    $$('.stat .num').forEach(function(n){ G.from(n, {scale:.4, duration:1.1, ease:'elastic.out(1,.5)', scrollTrigger:{trigger:n, start:'top 88%', once:true}}); });
+  }
+
+  /* ---------- 3D tilt (mouse only) ---------- */
+  if(G && matchMedia('(hover:hover) and (pointer:fine)').matches){
+    $$('.ch, .lvl, .pc, .pp, .shot .bframe, .yt').forEach(function(el){
+      G.set(el, {transformPerspective:900});
+      var rx = G.quickTo(el, 'rotationX', {duration:.5, ease:'power3'}), ry = G.quickTo(el, 'rotationY', {duration:.5, ease:'power3'});
+      el.addEventListener('pointermove', function(e){ var r = el.getBoundingClientRect(); ry(((e.clientX - r.left) / r.width - .5) * 10); rx(-((e.clientY - r.top) / r.height - .5) * 10); });
+      el.addEventListener('pointerleave', function(){ rx(0); ry(0); });
+    });
+  }
+
   /* ---------- route lines ---------- */
   if(G){ $$('#routeNav a').forEach(function(a){ var id = a.getAttribute('href'), t = $(id), bar = $('.rline i', a); if(!t) return; G.to(bar, {scale:1, ease:'none', scrollTrigger:{trigger:t, start:'top 70%', end:'bottom 30%', scrub:true}}); }); }
 
@@ -1139,7 +1246,7 @@ function xInit(){
     $$('#blocks .blk').forEach(function(b){
       var on = d.show.indexOf(b.dataset.b) > -1, was = !b.classList.contains('off');
       b.classList.toggle('off', !on);
-      if(on && !was){ b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); }
+      if(on && !was){ if(G){ G.fromTo(b, {y:-90, rotation:(Math.random() - .5) * 30, scale:.6}, {y:0, rotation:0, scale:1, duration:.9, ease:'elastic.out(1,.55)'}); } else { b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); } }
     });
     $('#stEn').innerHTML = d.html; $('#stRu').textContent = d.ru; $('#stF').innerHTML = d.f; $('#stRule').textContent = d.rule;
     stBtn.dataset.say = d.en;
@@ -1168,7 +1275,7 @@ function xInit(){
   var mK = 0, mT = null;
   function setPM(k, instant){
     var d = PM[k], sent = $('#mSent');
-    $('#mGlyph').textContent = d.g;
+    $('#mGlyph').textContent = d.g; if(G && !instant) G.fromTo('#mGlyph', {scale:.4, rotation:-25}, {scale:1, rotation:0, duration:.9, ease:'elastic.out(1,.45)'});
     $('#mKind').innerHTML = '<svg class="ic"><use href="#i-' + d.ic + '"/></svg> <span>' + d.k + '</span>';
     $('#mRu').textContent = d.ru;
     $$('#mDots button').forEach(function(b, i){ b.classList.toggle('on', i === k); });
@@ -1199,6 +1306,8 @@ function xInit(){
     $$('#pillars .pil').forEach(function(p, i){ p.classList.toggle('on', i === k); });
     $('#cEn').textContent = d.en; $('#cRu').textContent = d.ru; $('#cF').innerHTML = d.f; $('#cRule').textContent = d.rule; $('#cSay').dataset.say = d.en;
     $('#cMeter').style.width = d.m + '%';
+    var TT = [['Всегда','глагол в настоящем, правда без срока'],['Будущее','реальный план: Present после if, will во второй части'],['Шаг назад','Past, хотя речь о сейчас: «далеко от реальности»'],['Два шага назад','Past Perfect: прошлое, которое уже не изменить']];
+    $('#cHand').style.rotate = (-90 * k) + 'deg'; $('#cTime').textContent = TT[k][0]; $('#cTimeS').textContent = TT[k][1];
     if(G){ var p = $$('#pillars .pil')[k]; G.fromTo(p, {scaleY:.85}, {scaleY:1, transformOrigin:'50% 100%', duration:.7, ease:'elastic.out(1,.45)'}); }
   }
   $$('#lv button').forEach(function(b){ b.addEventListener('click', function(){ setCD(+b.dataset.k); }); });
